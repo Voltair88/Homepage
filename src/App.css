@@ -1,0 +1,81 @@
+.Navbar {
+  display: flex;
+  justify-content: flex-end;
+  background-color: orange;
+  height: 2.5vmax;
+}
+
+.Navlink {
+  margin-top: 0.3%;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-style: normal;
+  font-size: 1.5vmax;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background: #282c34;
+}
+
+/* Landingpage */
+
+.landing-grid {
+  text-align: center;
+}
+
+.avatar-img {
+  height: 250px;
+  padding-top: 5em;
+}
+
+.banner-text {
+  background-color: black;
+  opacity: 0.8;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.banner-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text p {
+  color: white;
+  font-size: 1.5vmax;
+  padding: 1em;
+  margin-top: 0px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.social-links i {
+  color: white;
+  font-size: 10vmin;
+  padding: 10px;
+}
+
+/* Weather-app */
+
+.weather {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10%;
+}
