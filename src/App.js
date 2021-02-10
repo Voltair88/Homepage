@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <AnimatePresence>
           <Switch>
-            <Route path="/">
+            <Route path='/' exact>
               <Home />
             </Route>
             <Route path="/About">
