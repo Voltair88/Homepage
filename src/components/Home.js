@@ -6,11 +6,11 @@ const Home = () => {
       <div>
         <div className="landing-grid">
           <div>
-            <motion.img  whileHover={{ scale: 1.1 }} 
+            <img 
               src="https://www.clipartmax.com/png/full/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png"
               alt="avatar"
               className="avatar-img"/>
-            <motion.div className="banner-text"  whileHover={{ scale: 1.1 }}>
+            <div className="banner-text">
               <h1>Front-end web developer</h1>
               <p>HTML/CSS | JavaScript | React</p>
               <div className="social-links">
@@ -20,16 +20,16 @@ const Home = () => {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fa fa-facebook-square" aria-hidden="true" />
+                  <motion.i className="fa fa-facebook-square" aria-hidden="true"   whileHover={{ scale: 1.1 }} />
                 </a>
-asdsadaasd
+
                 {/* Linked in */}
                 <a
                   href="https://www.linkedin.com/in/mattias-gulec-1bbb6a72/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-linkedin" aria-hidden="true" />
+                  <motion.i className="fab fa-linkedin" aria-hidden="true"   whileHover={{ scale: 1.1 }} />
                 </a>
 
                 {/* Github */}
@@ -38,7 +38,7 @@ asdsadaasd
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fa fa-github-square" aria-hidden="true" />
+                  <motion.i className="fa fa-github-square" aria-hidden="true"  whileHover={{ scale: 1.1 }} />
                 </a>
 
                 {/* Twitter */}
@@ -47,10 +47,10 @@ asdsadaasd
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <i className="fab fa-twitter-square" aria-hidden="true" />
+                  <motion.i className="fab fa-twitter-square" aria-hidden="true"  whileHover={{ scale: 1.1 }} />
                 </a>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>

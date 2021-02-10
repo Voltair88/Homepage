@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
 
-export const Weather = () => {
+const Weather = () => {
   const customStyles = {
     fontFamily:  'Helvetica, sans-serif',
     gradientStart:  '#0181C2',
