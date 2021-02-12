@@ -1,32 +1,3 @@
-/* import React, { Component } from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import styled from "styled-components";
-
-import '../App.css'
-export default class Navbar extends Component {
-    render () {
-
-        return (
-        <div className="navbar">
-            <div className="topbar">
-                <div className="header-left">
-                    <h3>Mattias Gulec</h3>
-                </div>
-                <div className='header-right'>
-                    <NavLink exact to="/" className='Navlink'activeClassName="activ"  >Home</NavLink>
-                    <NavLink to="/about" className='Navlink' activeClassName="activ" >About</NavLink>
-                    <NavLink to="/portfolio" className='Navlink' activeClassName="activ">Portfolio</NavLink>
-                    <NavLink to="/Weather" className='Navlink' activeClassName="activ">Weather</NavLink>
-                </div>
-            </div>
-        </div>
-        )
-    }
-}
-
- */
-
-
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';

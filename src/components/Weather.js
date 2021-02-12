@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 import ReactWeather, { useOpenWeather } from 'react-open-weather';
 
 const Weather = () => {
