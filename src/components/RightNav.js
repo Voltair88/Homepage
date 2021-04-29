@@ -10,7 +10,7 @@ import { GlobalStyles } from '../global';
 
 const RightNav = ({ open }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const themeMode = theme === 'dark' ? lightTheme : darkTheme;
 
   if (!componentMounted) {
     return <div />

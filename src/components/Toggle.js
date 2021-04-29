@@ -1,8 +1,8 @@
 import React from 'react'
 import { func, string } from 'prop-types';
 import styled from 'styled-components';
-import { ReactComponent as MoonIcon } from './icons/night.svg';
-import { ReactComponent as SunIcon } from './icons/sun.svg';
+import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded';
+import NightsStayOutlinedIcon from '@material-ui/icons/NightsStayOutlined';
 
 const ToggleContainer = styled.button`
   display: flex;
@@ -20,24 +20,24 @@ const ToggleContainer = styled.button`
   svg {
     width: 2rem;
     height: auto;
-    transition: all 0.3s linear;
+    transition: all 0.5s linear;
     &:first-child {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateX(0)' : 'translateX(100px)'};
+      transform: ${({ lightTheme }) => lightTheme ? 'translateX(0)' : 'translateX(200px)'};
     }
     &:nth-child(2) {
-      transform: ${({ lightTheme }) => lightTheme ? 'translateX(-100px)' : 'translateX(0)'};
+      transform: ${({ lightTheme }) => lightTheme ? 'translateX(-200px)' : 'translateX(0)'};
     }
   }
 `;
 
 
 const Toggle = ({ theme, toggleTheme }) => {
-  const isLight = theme === 'light';
+  const isLight = theme === 'dark';
 
   return (
     <ToggleContainer lightTheme={isLight} onClick={toggleTheme} >
-      <SunIcon />
-      <MoonIcon />
+      <WbSunnyRoundedIcon />
+      <NightsStayOutlinedIcon />
     </ToggleContainer>
   );
 };

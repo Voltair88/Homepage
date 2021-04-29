@@ -1,11 +1,10 @@
 import React from "react";
 import { motion } from 'framer-motion';
+import { Landing } from "../global";
 
 const Home = () => {
     return (
-      <div>
-        <div className="landing-grid">
-          <div>
+        <Landing>
             <img 
               src="https://www.clipartmax.com/png/full/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png"
               alt="avatar"
@@ -51,9 +50,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+        </Landing>
     );
   }
 
