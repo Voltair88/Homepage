@@ -77,11 +77,3 @@ body {
   font-size: 10vmin;
   padding: 10px;
 }
-
-/* Weather-app */
-
-.weather {
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 10%;
-}

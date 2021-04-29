@@ -5,31 +5,22 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Weather from "./components/Weather";
-import { AnimatePresence} from "framer-motion";
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <>
         <Navbar />
-        <AnimatePresence>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route path="/About">
-              <About />
-            </Route>
-            <Route path="/Portfolio">
-              <Portfolio />
-            </Route>
-            <Route path="/Weather">
-              <Weather />
-            </Route>
-          </Switch>
-          </AnimatePresence>
-        </div>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/About">
+          <About />
+        </Route>
+        <Route path="/Portfolio">
+          <Portfolio />
+        </Route>
+      </>
     </Router>
   );
 }
