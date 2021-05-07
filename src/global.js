@@ -61,17 +61,40 @@ export const Ul = styled.ul`
 `;
 /* Logo */
 export const Nav = styled.nav`
-  width: 100%;
   border-bottom: 2px solid;
   display: flex;
-  justify-content: space-between;
+  flex-direction:row;
+  align-items: center;
+  font-family: Mulish, sans-serif;
   .logo {
-    padding: 15px 0;
-    text-align: center;
-    margin: auto 0;
-    font-size: 28px;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: row;
+    padding: 15px 0 0 15px;
+    font-size: 2rem;
   }
+  .name {
+    border-left: solid 1px;
+    padding-left: 5px;
+    margin: auto 5px;
+    line-height: 0.8;
+
+  }
+  p {
+    margin: 0;
+  }
+  p2 {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .divider {
+    display: flex;
+    flex: 1;
+}
+
+
 `;
+
 /* Landingpage */
 export const Landing = styled.div`
   text-align: center;

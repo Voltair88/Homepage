@@ -8,6 +8,8 @@ import { lightTheme, darkTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from '../global';
 
+
+
 const RightNav = ({ open }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
   const themeMode = theme === 'dark' ? lightTheme : darkTheme;
