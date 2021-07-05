@@ -44,7 +44,7 @@ export const Ul = styled.ul`
     }
   }
   .div-link {
-    margin-top: 5px;
+    margin-top: 15px;
     margin-right: 5px;
   }
 
@@ -62,15 +62,18 @@ export const Ul = styled.ul`
 /* Logo */
 export const Nav = styled.nav`
   border-bottom: 2px solid;
+  margin: 5px;
   display: flex;
   flex-direction:row;
   align-items: center;
   font-family: Mulish, sans-serif;
   .logo {
     display: flex;
+    align-items: center;
     flex-shrink: 0;
     flex-direction: row;
-    padding: 15px 0 0 15px;
+    
+padding-top: 5px;
     font-size: 2rem;
   }
   .name {
@@ -141,8 +144,27 @@ export const Landing = styled.div`
   }
 
   .social-links i {
-    color: rgb(85, 26, 139);
     font-size: 10vmin;
     padding: 10px;
+  }
+
+  .social-links a {
+    color: white;
+  }
+
+  .fa-facebook-square:hover {
+    color: #4267B2;
+  }
+
+  .fa-linkedin:hover {
+    color: #2867B2;
+  }
+
+  .fa-github-square:hover {
+    color: #333;
+  }
+
+  .fa-twitter-square:hover {
+    color: #1DA1F2;
   }
 `;
