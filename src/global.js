@@ -104,7 +104,7 @@ export const Landing = styled.div`
   .avatar-img {
     margin-top: 1%;
     border-radius: 50%;
-    width: 50vh;
+    width: 50vmin;
     height: auto;
     border: #333 solid 5px;
   }
@@ -112,7 +112,7 @@ export const Landing = styled.div`
   .banner-text {
     background-color: black;
     opacity: 0.8;
-    width: 75%;
+    width: 80vw;
     margin: auto;
     border-radius: 10px;
     margin-bottom: 1%;
@@ -120,10 +120,10 @@ export const Landing = styled.div`
 
   .banner-text h1 {
     color: white;
-    font-size: 3vmax;
+    font-size: calc(16px + 3vw);
     font-weight: bold;
-    margin-bottom: 0px;
-    padding: 10px;
+    padding: 1px;
+    margin: auto;
   }
 
   .banner-text hr {
@@ -134,7 +134,7 @@ export const Landing = styled.div`
 
   .banner-text p {
     color: white;
-    font-size: 1.6vmax;
+    font-size: calc(8px + 1.5vw);
     margin-top: 0px;
   }
 
@@ -168,5 +168,40 @@ export const Landing = styled.div`
 
   .fa-twitter-square:hover {
     color: #1DA1F2;
+  }
+`;
+
+/* Portfolio */
+export const Port = styled.div`
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+  .Cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    place-items: center;
+    line-height: 1.6;
+  }
+  .blogcard {
+    margin: auto;
+    border-radius: 15px;
+    background-color: pink;
+    background-size: cover;
+    padding: 15rem 0 0;
+    width: 250px;
+  }
+
+  .card-content {
+    border-radius: 0 0 15px 15px;
+    padding:0.5em;
+    background: hsl(20 0% 0% /0.3) 20% ;
+  }
+
+  .card-title {
+    position: relative;
+    padding: auto;
+    margin: auto;
   }
 `;

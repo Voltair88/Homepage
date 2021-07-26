@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from 'framer-motion';
 import { Landing } from "../global";
 import profile from "../profile.png";
+
+
 const Home = () => {
     return (
         <Landing>
@@ -11,7 +13,7 @@ const Home = () => {
               className="avatar-img"/>
             <div className="banner-text">
               <h1>Front-end web developer</h1>
-              <p>HTML/CSS | JavaScript | React</p>
+              <p>HTML/CSS | JavaScript | React | Node.js</p>
               <div className="social-links">
                 {/* Facebook */}
                 <a
