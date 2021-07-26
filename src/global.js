@@ -102,9 +102,11 @@ padding-top: 5px;
 export const Landing = styled.div`
   text-align: center;
   .avatar-img {
-    height: 250px;
-    width: auto;
-    padding-top: 5em;
+    margin-top: 1%;
+    border-radius: 50%;
+    width: 50vh;
+    height: auto;
+    border: #333 solid 5px;
   }
 
   .banner-text {
@@ -113,11 +115,12 @@ export const Landing = styled.div`
     width: 75%;
     margin: auto;
     border-radius: 10px;
+    margin-bottom: 1%;
   }
 
   .banner-text h1 {
     color: white;
-    font-size: 5vmax;
+    font-size: 3vmax;
     font-weight: bold;
     margin-bottom: 0px;
     padding: 10px;
@@ -131,8 +134,7 @@ export const Landing = styled.div`
 
   .banner-text p {
     color: white;
-    font-size: 2vmax;
-    padding: 1em;
+    font-size: 1.6vmax;
     margin-top: 0px;
   }
 

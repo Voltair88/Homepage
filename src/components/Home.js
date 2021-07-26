@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from 'framer-motion';
 import { Landing } from "../global";
-
+import profile from "../profile.png";
 const Home = () => {
     return (
         <Landing>
             <img 
-              src="https://www.clipartmax.com/png/full/257-2572603_user-man-social-avatar-profile-icon-man-avatar-in-circle.png"
+              src= {profile}
               alt="avatar"
               className="avatar-img"/>
             <div className="banner-text">
