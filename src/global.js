@@ -186,7 +186,7 @@ export const Port = styled.div`
   }
   .blogcard {
     margin: auto;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: pink;
     background-size: cover;
     padding: 15rem 0 0;
@@ -194,7 +194,7 @@ export const Port = styled.div`
   }
 
   .card-content {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 5px 5px;
     padding:0.5em;
     background: hsl(20 0% 0% /0.3) 20% ;
   }
