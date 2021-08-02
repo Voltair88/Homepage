@@ -64,7 +64,7 @@ export const Nav = styled.nav`
   border-bottom: 2px solid;
   margin: 5px;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   align-items: center;
   font-family: Mulish, sans-serif;
   .logo {
@@ -72,8 +72,8 @@ export const Nav = styled.nav`
     align-items: center;
     flex-shrink: 0;
     flex-direction: row;
-    
-padding-top: 5px;
+
+    padding-top: 5px;
     font-size: 2rem;
   }
   .name {
@@ -81,7 +81,6 @@ padding-top: 5px;
     padding-left: 5px;
     margin: auto 5px;
     line-height: 0.8;
-
   }
   p {
     margin: 0;
@@ -93,9 +92,7 @@ padding-top: 5px;
   .divider {
     display: flex;
     flex: 1;
-}
-
-
+  }
 `;
 
 /* Landingpage */
@@ -155,11 +152,11 @@ export const Landing = styled.div`
   }
 
   .fa-facebook-square:hover {
-    color: #4267B2;
+    color: #4267b2;
   }
 
   .fa-linkedin:hover {
-    color: #2867B2;
+    color: #2867b2;
   }
 
   .fa-github-square:hover {
@@ -167,25 +164,27 @@ export const Landing = styled.div`
   }
 
   .fa-twitter-square:hover {
-    color: #1DA1F2;
+    color: #1da1f2;
   }
 `;
 
 /* Portfolio */
 export const Port = styled.div`
-*,*::before,*::after {
-  box-sizing: border-box;
-}
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
   .Cards {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: 50vh;
     place-items: center;
     line-height: 1.6;
   }
   .blogcard {
-    margin: auto;
+    margin: 10px auto;
     border-radius: 5px;
     background-color: pink;
     background-size: cover;
@@ -195,13 +194,80 @@ export const Port = styled.div`
 
   .card-content {
     border-radius: 0 0 5px 5px;
-    padding:0.5em;
-    background: hsl(20 0% 0% /0.3) 20% ;
+    padding: 0.5em;
+    background: hsl(20 0% 0% /0.3) 20%;
   }
 
   .card-title {
     position: relative;
     padding: auto;
     margin: auto;
+  }
+
+  .card-body {
+
+  }
+
+
+
+  .contentBox {
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .buttonBox {
+    margin: 0 20px 20px;
+    position: relative;
+    max-width: 200px;
+    min-width: 150px;
+    flex: 20%;
+  }
+
+  .border {
+    position: absolute;
+    background: none;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #first > .border:nth-of-type(1) {
+    top: 0;
+    left: 0;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    width: 30px;
+    height: 30px;
+  }
+
+  #first > .border:nth-of-type(2) {
+    bottom: 0;
+    right: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 30px;
+    height: 30px;
+  }
+
+  #first:hover .border {
+    width: 102%;
+    height: 105%;
+  }
+
+  .card-button {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.27);
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 `;
