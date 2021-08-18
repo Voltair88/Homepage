@@ -208,8 +208,6 @@ export const Port = styled.div`
 
   }
 
-
-
   .contentBox {
     width: 80px;
     height: 30px;
