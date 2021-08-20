@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
+import { Container } from "@material-ui/core";
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -273,3 +274,69 @@ export const Port = styled.div`
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   }
 `;
+
+export const Me = styled.div`
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .about-container h1 {
+    font-size: calc(16px + 3vw);
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 1%;
+  }
+  .about-container p {
+    font-size: calc(8px + 1.5vw);
+    margin-top: 0px;
+  }
+  .about-container hr {
+    border-top: 5px;
+    width: 50%;
+    margin: auto;
+  }
+  .about-container .about-text {
+    width: 80vw;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 1%;
+  }
+  .about-container .about-text h1 {
+    color: white;
+    font-size: calc(16px + 3vw);
+    font-weight: bold;
+    padding: 1px;
+    margin: auto;
+  }
+  .about-container .about-text hr {
+    border-top: 5px;
+    width: 50%;
+    margin: auto;
+  }
+  .about-container .about-text p {
+    color: white;
+    font-size: calc(8px + 1.5vw);
+    margin-top: 0px;
+  }
+`;
+
+export const Res = styled.iframe`
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  top: 10%;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+`;
+
+
+

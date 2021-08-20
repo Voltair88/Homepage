@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import Resume from "./components/resume";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path="/Portfolio">
           <Portfolio />
+        </Route>
+        <Route path="/resume">
+          <Resume/>
         </Route>
       </>
     </Router>

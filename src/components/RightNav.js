@@ -7,6 +7,8 @@ import Toggle  from "./Toggle";
 import { lightTheme, darkTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from '../global';
+import Resume from "../resume.pdf";
+
 
 
 
@@ -36,7 +38,13 @@ const RightNav = ({ open }) => {
           Portfolio
         </NavLink>
       </motion.div>
-      <Toggle theme={theme} toggleTheme={toggleTheme} />
+      <motion.a className="div-link" whileHover={{ scale: 1.1 }} without rel="noopener noreferrer" target="_blank">
+        <NavLink to="/Resume" className="Navlink" activeClassName="activ">
+          Resume
+        </NavLink>
+        </motion.a>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+
     </Ul>
     </ThemeProvider>
   );
