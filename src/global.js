@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import { blogimg, stpeople, football, Quire } from "./img/index";
+import {
+  blogimg,
+  stpeople,
+  football,
+  Quire,
+  profile,
+  profileimg,
+} from "./img/index";
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -11,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     margin: 0 auto;
-    font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-family: Mulish, sans-serif;
     transition: all 0.25s linear;
   }`;
 /* Navbar */
@@ -102,22 +109,59 @@ export const Nav = styled.nav`
 
 /* Landingpage */
 export const Landing = styled.div`
+  font-family: Mulish, sans-serif;
   text-align: center;
   .avatar-img {
-    margin-top: 1%;
+    position: relative;
+    margin: 0.5% auto 5vh;
     border-radius: 50%;
     width: 50vmin;
-    height: auto;
+    height: 50vmin;
+  }
+  .avatar-msg {
+    pointer-events: none;
+    margin: 5px;
+  }
+
+  .MuiSvgIcon-root {
+    position: absolute;
+    top: -7px;
+    }
+
+
+  .top {
+    border-radius: 50%;
+    margin: 0;
+    width: 50vmin;
+    height: 50vmin;
     border: #333 solid 5px;
+  }
+  .bottom {
+    border-radius: 50%;
+    width: 50vmin;
+    height: 50vmin;
+    border: #333 solid 5px;
+  }
+  .avatar-img img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .avatar-img img.top:hover {
+    opacity: 0;
   }
 
   .banner-text {
+    position: relative;
+    margin: auto;
     background-color: black;
     opacity: 0.8;
-    width: 80vw;
-    margin: auto;
+    width: 65vw;
     border-radius: 10px;
-    margin-bottom: 1%;
   }
 
   .banner-text h1 {
@@ -219,7 +263,7 @@ export const Port = styled.div`
     padding: 0.5em;
     background: linear-gradient(
       hsl(0 0% 0% / 0) 0%,
-      hsl(20 0% 0% / 0.5) 15%,
+      hsl(20 0% 0% / 0.6) 10%,
       hsl(0 0% 0% / 0.8)
     );
   }
