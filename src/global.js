@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import { Container } from "@material-ui/core";
+import { blogimg, stpeople, football, Quire } from "./img/index";
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -191,16 +191,37 @@ export const Port = styled.div`
   .blogcard {
     margin: 10px auto;
     border-radius: 5px;
-    background-color: pink;
-    background-size: cover;
     padding: 15rem 0 0;
     width: 250px;
+    height: auto;
   }
-
+  .blogcard:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  }
+  .blogcard:nth-child(1) {
+    background-image: url(${blogimg});
+    background-size: cover;
+  }
+  .blogcard:nth-child(2) {
+    background-image: url(${stpeople});
+    background-size: cover;
+  }
+  .blogcard:nth-child(3) {
+    background-image: url(${Quire});
+    background-size: cover;
+  }
+  .blogcard:nth-child(4) {
+    background-image: url(${football});
+    background-size: cover;
+  }
   .card-content {
     border-radius: 0 0 5px 5px;
     padding: 0.5em;
-    background: hsl(20 0% 0% /0.3) 20%;
+    background: linear-gradient(
+      hsl(0 0% 0% / 0) 0%,
+      hsl(20 0% 0% / 0.5) 15%,
+      hsl(0 0% 0% / 0.8)
+    );
   }
 
   .card-title {
@@ -210,7 +231,6 @@ export const Port = styled.div`
   }
 
   .card-body {
-
   }
 
   .contentBox {
@@ -337,6 +357,3 @@ export const Res = styled.iframe`
   position: absolute;
   z-index: -1;
 `;
-
-
-
