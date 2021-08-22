@@ -5,8 +5,6 @@ import {
   stpeople,
   football,
   Quire,
-  profile,
-  profileimg,
 } from "./img/index";
 
 export const GlobalStyles = createGlobalStyle`

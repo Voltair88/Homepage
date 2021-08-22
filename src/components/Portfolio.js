@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { Port } from "../global";
 import { motion } from "framer-motion";
 
 const Portfolio = () => {
-  {
     return (
       <Port>
         <div className="Cards">
@@ -22,6 +21,7 @@ const Portfolio = () => {
                   <a
                     href="https://github.com/Voltair88/node-test"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="card-button">Github</button>
                   </a>
@@ -53,6 +53,7 @@ const Portfolio = () => {
                   <a
                     href="https://elegant-aryabhata-b3ff31.netlify.app/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="card-button">Live</button>
                   </a>
@@ -79,7 +80,7 @@ const Portfolio = () => {
                 <div id="first" class="buttonBox">
                   <div class="border"></div>
                   <div class="border"></div>
-                  <a href="http://vellum.surge.sh/" target="_blank">
+                  <a href="http://vellum.surge.sh/" target="_blank" rel="noreferrer">
                     <button className="card-button">Live</button>
                   </a>
                 </div>
@@ -99,6 +100,7 @@ const Portfolio = () => {
                   <a
                     href="https://github.com/Voltair88/fe20tp2_bev_-5-"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     <button className="card-button">Github</button>
                   </a>
@@ -109,6 +111,5 @@ const Portfolio = () => {
         </div>
       </Port>
     );
-  }
 };
 export default Portfolio;

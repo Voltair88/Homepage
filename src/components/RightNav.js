@@ -7,10 +7,6 @@ import Toggle  from "./Toggle";
 import { lightTheme, darkTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from '../global';
-import Resume from "../resume.pdf";
-
-
-
 
 const RightNav = ({ open }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();

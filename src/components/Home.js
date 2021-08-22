@@ -9,8 +9,8 @@ const Home = () => {
     <Landing>
       <div className="avatar-img">
         <p className="avatar-msg">Click/hover  <ArrowDownwardIcon fontSize="large" /></p>
-        <img className="bottom" src={profileimg} />
-        <img className="top" src={profile} />
+        <img className="bottom" alt="profile" src={profileimg} />
+        <img className="top" alt="profile" src={profile} />
                     {/* <img 
               src= {profile}
               onMouseOver={e => e.currentTarget.src = profileimg}
