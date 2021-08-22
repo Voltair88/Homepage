@@ -374,14 +374,14 @@ export const Me = styled.div`
 `;
 
 export const Res = styled.iframe`
-  width: 100%;
-  height: 100%;
-  border: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  top: 10%;
-  left: 0;
+  width: 50%;
+  height: 88%;
+  margin: 0 25%;
   position: absolute;
-  z-index: -1;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
 `;
