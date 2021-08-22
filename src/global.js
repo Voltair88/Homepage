@@ -126,8 +126,7 @@ export const Landing = styled.div`
   .MuiSvgIcon-root {
     position: absolute;
     top: -7px;
-    }
-
+  }
 
   .top {
     border-radius: 50%;
@@ -269,12 +268,14 @@ export const Port = styled.div`
   }
 
   .card-title {
+    color: white;
     position: relative;
     padding: auto;
     margin: auto;
   }
 
   .card-body {
+    color: white;
   }
 
   .contentBox {
@@ -349,43 +350,26 @@ export const Me = styled.div`
     width: 100%;
     height: 100%;
   }
-  .about-container h1 {
-    font-size: calc(16px + 3vw);
-    font-weight: bold;
-    margin: auto;
-    margin-bottom: 1%;
-  }
-  .about-container p {
-    font-size: calc(8px + 1.5vw);
-    margin-top: 0px;
-  }
-  .about-container hr {
-    border-top: 5px;
-    width: 50%;
-    margin: auto;
-  }
-  .about-container .about-text {
+  .about-text {
     width: 80vw;
     margin: auto;
     border-radius: 10px;
     margin-bottom: 1%;
   }
-  .about-container .about-text h1 {
-    color: white;
+  .about-text h1 {
     font-size: calc(16px + 3vw);
     font-weight: bold;
     padding: 1px;
     margin: auto;
   }
-  .about-container .about-text hr {
-    border-top: 5px;
-    width: 50%;
-    margin: auto;
+  .about-text hr {
+    border-bottom: 1px solid white;
+    width: 90%;
+    margin-left: 2px;
   }
-  .about-container .about-text p {
-    color: white;
-    font-size: calc(8px + 1.5vw);
-    margin-top: 0px;
+  .about-text p {
+    font-size: calc(10px + 1.2vw);
+    margin-top: 5px;
   }
 `;
 
