@@ -5,8 +5,11 @@ export default class Resume extends Component {
     return (
       <Res           className="resume"
       src="https://drive.google.com/file/d/1Xe4hOr0betBeiiLZjhaI7knFXpPGFr3-/preview"      type="application/pdf"
-      title="title"
-      allow="autoplay">
+      title="resume"
+      allow="autoplay"
+      frameBorder="1"
+      >
+        
       </Res>
     );
   }

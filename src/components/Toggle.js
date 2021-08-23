@@ -35,7 +35,8 @@ const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'dark';
 
   return (
-    <ToggleContainer lightTheme={isLight} onClick={toggleTheme} >
+    <ToggleContainer lightTheme={isLight} onClick={toggleTheme}           aria-label="toggle dark/light mode"
+    >
       <WbSunnyRoundedIcon />
       <NightsStayOutlinedIcon />
     </ToggleContainer>

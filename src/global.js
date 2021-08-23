@@ -377,6 +377,7 @@ export const Res = styled.iframe`
   margin: 0 25%;
   position: absolute;
   overflow: hidden;
+  
   @media (max-width: 767px) {
     width: 100%;
     height: 100%;

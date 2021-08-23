@@ -1,22 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Landing } from "../global";
-import profile from "../img/profile.png";
-import profileimg from "../img/profileimg.png";
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
+import {profile ,profileimg} from "../img/index";
+import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 const Home = () => {
   return (
     <Landing>
       <div className="avatar-img">
-        <p className="avatar-msg">Click/hover  <ArrowDownwardIcon fontSize="large" /></p>
-        <img className="bottom" alt="profile" src={profileimg} />
-        <img className="top" alt="profile" src={profile} />
-                    {/* <img 
-              src= {profile}
-              onMouseOver={e => e.currentTarget.src = profileimg}
-              onMouseOut={e => e.currentTarget.src = profile}
-              alt="avatar"
-              className="avatar-img"/> */}
+        <p className="avatar-msg">
+          Click/hover <ArrowDownwardIcon fontSize="large" />
+        </p>
+        <img
+          className="bottom"
+          alt="profile"
+          rel="preload"
+          as="image"
+          src={profileimg}
+        />
+        <img
+          className="top"
+          alt="profile"
+          rel="preload"
+          as="image"
+          src={profile}
+        />
       </div>
 
       <div className="banner-text">
@@ -28,6 +35,8 @@ const Home = () => {
             href="https://www.facebook.com/Voltair88"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="Facebook"
+
           >
             <motion.i
               className="fa fa-facebook-square"
@@ -41,6 +50,7 @@ const Home = () => {
             href="https://www.linkedin.com/in/mattias-gulec-1bbb6a72/"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="Linked in"
           >
             <motion.i
               className="fab fa-linkedin"
@@ -54,6 +64,7 @@ const Home = () => {
             href="https://github.com/Voltair88"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="Github"
           >
             <motion.i
               className="fa fa-github-square"
@@ -67,6 +78,8 @@ const Home = () => {
             href="https://twitter.com/mattegulec"
             rel="noopener noreferrer"
             target="_blank"
+            aria-label="Twitter"
+
           >
             <motion.i
               className="fab fa-twitter-square"
