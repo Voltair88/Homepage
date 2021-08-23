@@ -18,31 +18,31 @@ const RightNav = ({ open }) => {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Ul open={open}>
-        <div className="div-link" whilehover={{ scale: 1.1 }}>
+        <div className="div-link">
           <NavLink exact to="/" className="Navlink" activeClassName="activ">
             Home
           </NavLink>
         </div>
-        <div className="div-link" whilehover={{ scale: 1.1 }}>
+        <div className="div-link">
           <NavLink to="/about" className="Navlink" activeClassName="activ">
             About
           </NavLink>
         </div>
-        <div className="div-link" whilehover={{ scale: 1.1 }}>
+        <div className="div-link">
           <NavLink to="/portfolio" className="Navlink" activeClassName="activ">
             Portfolio
           </NavLink>
         </div>
-        <div className="div-link" whilehover={{ scale: 1.1 }}>
+        <div className="div-link">
           <NavLink
             to="/Resume"
             className="Navlink"
             activeClassName="activ"
-            whilehover={{ scale: 1.1 }}
+          
           >
             Resume
           </NavLink>
-          </div>
+        </div>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
       </Ul>
     </ThemeProvider>

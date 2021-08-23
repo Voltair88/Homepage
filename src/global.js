@@ -10,7 +10,11 @@ import {
 export const GlobalStyles = createGlobalStyle`
   html {
     scroll-behavior: smooth;
+  
+  @media (max-width: 1500px) {
+    font-size: 1em;
   }
+}
   
   body {
     background: ${({ theme }) => theme.body};
@@ -23,6 +27,12 @@ export const GlobalStyles = createGlobalStyle`
 export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
+  @media (pointer: coarse) {
+    * {
+    padding: 1em;
+    font-size: 1em;
+}
+  }
   .div-link {
     margin: 10px;
   }
@@ -53,7 +63,7 @@ export const Ul = styled.ul`
       text-decoration: none;
       color: #fff;
       border-radius: 8px;
-      font-size: 1.5rem;
+      font-size: 1em;
     }
   }
   .div-link {
@@ -62,9 +72,18 @@ export const Ul = styled.ul`
   }
   @media (max-width: 768px) {
     .div-link {
+      padding: 10px;
       margin: 15px;
     }
   }
+
+  @media ( max-width: 1500px) and (min-width: 769px) {
+    .Navlink {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
+
   @media (max-width: 768px) {
     .header-right {
       float: none;
@@ -84,6 +103,9 @@ export const Nav = styled.nav`
   flex-direction: row;
   align-items: center;
   font-family: Mulish, sans-serif;
+  @media (max-width: 768px) {
+    font-size: 1.0rem;
+  }
   .logo {
     display: flex;
     align-items: center;
@@ -116,6 +138,9 @@ export const Nav = styled.nav`
 export const Landing = styled.div`
   font-family: Mulish, sans-serif;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 1.0rem;
+  }
   .avatar-img {
     position: relative;
     margin: 0.5% auto 5vh;
@@ -227,6 +252,9 @@ export const Port = styled.div`
   *::before,
   *::after {
     box-sizing: border-box;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.0rem;
   }
   .Cards {
     display: flex;
@@ -346,6 +374,9 @@ export const Port = styled.div`
 `;
 
 export const Me = styled.div`
+  @media (max-width: 768px) {
+    font-size: 1.0rem;
+  }
   .about-container {
     display: flex;
     flex-direction: column;
