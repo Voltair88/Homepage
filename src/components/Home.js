@@ -41,7 +41,7 @@ const Home = () => {
             <motion.i
               className="fa fa-facebook-square"
               aria-hidden="true"
-              whileHover={{ scale: 1.1 }}
+              whilehover={{ scale: 1.1 }}
             />
           </a>
 
@@ -55,7 +55,7 @@ const Home = () => {
             <motion.i
               className="fab fa-linkedin"
               aria-hidden="true"
-              whileHover={{ scale: 1.1 }}
+              whilehover={{ scale: 1.1 }}
             />
           </a>
 
@@ -69,7 +69,7 @@ const Home = () => {
             <motion.i
               className="fa fa-github-square"
               aria-hidden="true"
-              whileHover={{ scale: 1.1 }}
+              whilehover={{ scale: 1.1 }}
             />
           </a>
 
@@ -84,7 +84,7 @@ const Home = () => {
             <motion.i
               className="fab fa-twitter-square"
               aria-hidden="true"
-              whileHover={{ scale: 1.1 }}
+              whilehover={{ scale: 1.1 }}
             />
           </a>
         </div>

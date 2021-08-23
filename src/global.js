@@ -31,6 +31,7 @@ export const Ul = styled.ul`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     border-radius: 5px;
+
   }
   @media (max-width: 768px) {
     margin-top: 0px;
@@ -47,18 +48,24 @@ export const Ul = styled.ul`
     padding-inline-start: 10px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+
     .Navlink {
       text-decoration: none;
       color: #fff;
       border-radius: 8px;
+      font-size: 1.5rem;
     }
   }
   .div-link {
     margin-top: 15px;
     margin-right: 5px;
   }
-
-  @media (max-width: 456px) {
+  @media (max-width: 768px) {
+    .div-link {
+      margin: 15px;
+    }
+  }
+  @media (max-width: 768px) {
     .header-right {
       float: none;
       justify-content: flex-start;
@@ -92,10 +99,10 @@ export const Nav = styled.nav`
     margin: auto 5px;
     line-height: 0.8;
   }
-  p {
+  .header {
     margin: 0;
   }
-  p2 {
+  .sub-head {
     margin: 0;
     font-size: 1rem;
   }

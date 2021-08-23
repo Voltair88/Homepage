@@ -12,8 +12,8 @@ const Navbar = () => {
         <RiCodeBoxFill />
       </IconContext.Provider>
       <div className="name">
-        <p>Mattias Gulec</p>
-        <p2>Front-End Developer</p2>
+        <p className="header">Mattias Gulec</p>
+        <p className="sub-head">Front-End Developer</p>
 </div>
       </div>
       <div className="divider"></div>

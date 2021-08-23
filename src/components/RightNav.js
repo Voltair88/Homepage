@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { motion } from "framer-motion";
 import { Ul } from "../global";
 import { useDarkMode } from "../useDarkMode";
 import Toggle from "./Toggle";
@@ -19,36 +18,32 @@ const RightNav = ({ open }) => {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Ul open={open}>
-        <motion.div className="div-link" whileHover={{ scale: 1.1 }}>
+        <div className="div-link" whilehover={{ scale: 1.1 }}>
           <NavLink exact to="/" className="Navlink" activeClassName="activ">
             Home
           </NavLink>
-        </motion.div>
-        <motion.div className="div-link" whileHover={{ scale: 1.1 }}>
+        </div>
+        <div className="div-link" whilehover={{ scale: 1.1 }}>
           <NavLink to="/about" className="Navlink" activeClassName="activ">
             About
           </NavLink>
-        </motion.div>
-        <motion.div className="div-link" whileHover={{ scale: 1.1 }}>
+        </div>
+        <div className="div-link" whilehover={{ scale: 1.1 }}>
           <NavLink to="/portfolio" className="Navlink" activeClassName="activ">
             Portfolio
           </NavLink>
-        </motion.div>
-        <motion.a
-          className="div-link"
-          whileHover={{ scale: 1.1 }}
-          without
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <NavLink to="/Resume" className="Navlink" activeClassName="activ">
+        </div>
+        <div className="div-link" whilehover={{ scale: 1.1 }}>
+          <NavLink
+            to="/Resume"
+            className="Navlink"
+            activeClassName="activ"
+            whilehover={{ scale: 1.1 }}
+          >
             Resume
           </NavLink>
-        </motion.a>
-        <Toggle
-          theme={theme}
-          toggleTheme={toggleTheme}
-        />
+          </div>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
       </Ul>
     </ThemeProvider>
   );
