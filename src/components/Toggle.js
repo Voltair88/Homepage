@@ -10,7 +10,7 @@ const ToggleContainer = styled.button`
   background: ${({ theme }) => theme.gradient};
   width: 5rem;
   height: 3rem;
-  margin: 0 auto;
+  margin: 7px auto 0 auto;
   border-radius: 30px;
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   font-size: 0.5rem;

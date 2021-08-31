@@ -1,11 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-import {
-  blogimg,
-  stpeople,
-  football,
-  Quire,
-} from "./img/index";
 
 export const GlobalStyles = createGlobalStyle`
   html {
@@ -27,6 +21,9 @@ export const GlobalStyles = createGlobalStyle`
 export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
+  font-size: 1.5em;
+  margin: 0 auto 10px auto;
+
   @media (pointer: coarse) {
     * {
     padding: 1em;
@@ -253,19 +250,39 @@ export const Port = styled.div`
   *::after {
     box-sizing: border-box;
   }
+  h1 {
+    font-family: Mulish, sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+    text-align: center;
+  }
   @media (max-width: 768px) {
     font-size: 1.0rem;
   }
   .Cards {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    min-height: 50vh;
-    place-items: center;
-    line-height: 1.6;
+    margin: 0;
   }
+  .port-cate {
+    font-size: 1.5rem;
+    margin-right: 100%;
+    margin-left: 25px;
+    }
+
+  .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
   .blogcard {
-    margin: 10px auto;
+    margin: 10px;
     border-radius: 5px;
     padding: 15rem 0 0;
     width: 250px;
@@ -273,22 +290,6 @@ export const Port = styled.div`
   }
   .blogcard:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 1);
-  }
-  .blogcard:nth-child(1) {
-    background-image: url(${blogimg});
-    background-size: cover;
-  }
-  .blogcard:nth-child(2) {
-    background-image: url(${stpeople});
-    background-size: cover;
-  }
-  .blogcard:nth-child(3) {
-    background-image: url(${Quire});
-    background-size: cover;
-  }
-  .blogcard:nth-child(4) {
-    background-image: url(${football});
-    background-size: cover;
   }
   .card-content {
     border-radius: 0 0 5px 5px;
@@ -314,7 +315,7 @@ export const Port = styled.div`
   .contentBox {
     width: 80px;
     height: 30px;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

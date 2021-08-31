@@ -2,13 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Landing } from "../global";
 import {profile ,profileimg} from "../img/index";
-import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 const Home = () => {
   return (
     <Landing>
       <div className="avatar-img">
         <p className="avatar-msg">
-          Click/hover <ArrowDownwardIcon fontSize="large" />
         </p>
         <img
           className="bottom"
