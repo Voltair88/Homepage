@@ -6,17 +6,15 @@ const Home = () => {
   return (
     <Landing>
       <div className="avatar-img">
-        <p className="avatar-msg">
-        </p>
         <img
-          className="bottom"
+          className="bottom skeleton"
           alt="profile"
           rel="preload"
           as="image"
           src={profileimg}
         />
         <img
-          className="top"
+          className="top skeleton"
           alt="profile"
           rel="preload"
           as="image"
@@ -39,7 +37,10 @@ const Home = () => {
             <motion.i
               className="fa fa-facebook-square"
               aria-hidden="true"
-              whilehover={{ scale: 1.1 }}
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}
             />
           </a>
 
@@ -53,8 +54,10 @@ const Home = () => {
             <motion.i
               className="fab fa-linkedin"
               aria-hidden="true"
-              whilehover={{ scale: 1.1 }}
-            />
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}            />
           </a>
 
           {/* Github */}
@@ -67,8 +70,10 @@ const Home = () => {
             <motion.i
               className="fa fa-github-square"
               aria-hidden="true"
-              whilehover={{ scale: 1.1 }}
-            />
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}            />
           </a>
 
           {/* Twitter */}
@@ -82,8 +87,10 @@ const Home = () => {
             <motion.i
               className="fab fa-twitter-square"
               aria-hidden="true"
-              whilehover={{ scale: 1.1 }}
-            />
+              whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 },
+              }}            />
           </a>
         </div>
       </div>

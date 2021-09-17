@@ -7,7 +7,7 @@ import NightsStayOutlinedIcon from '@material-ui/icons/NightsStayOutlined';
 const ToggleContainer = styled.button`
   display: flex;
   justify-content: space-between;
-  background: ${({ theme }) => theme.gradient};
+  background: ${({ theme }) => theme.body};
   width: 5rem;
   height: 3rem;
   margin: 7px auto 0 auto;

@@ -13,8 +13,9 @@ const Portfolio = () => {
     <Port>
       <h1 className="port-title">Portfolio</h1>
       <div className="Cards">
-        <h2 className="port-cate">Live</h2>
         <div className="card">
+        <h2 className="port-cate">Live</h2>
+
           <motion.div
             className="blogcard"
             style={{ backgroundImage: `url(${blogimg})`, backgroundSize: "cover" }}
@@ -93,8 +94,9 @@ const Portfolio = () => {
             </div>
           </motion.div>
         </div>
-        <h2 className="port-cate">Github</h2>
         <div className="card">
+        <h2 className="port-cate">Github</h2>
+
           <motion.div
             className="blogcard"
             style={{ backgroundImage: `url(${Quire})`, backgroundSize: "cover" }}

@@ -2,8 +2,10 @@ import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+
   html {
     scroll-behavior: smooth;
+
   
   @media (max-width: 1500px) {
     font-size: 1em;
@@ -11,24 +13,23 @@ export const GlobalStyles = createGlobalStyle`
 }
   
   body {
-    background: ${({ theme }) => theme.body};
+    background: ${({ theme }) => theme.gradient};
     color: ${({ theme }) => theme.text};
     margin: 0 auto;
     font-family: Mulish, sans-serif;
-    transition: all 0.25s linear;
   }`;
 /* Navbar */
 export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0 auto 10px auto;
 
   @media (pointer: coarse) {
     * {
-    padding: 1em;
-    font-size: 1em;
-}
+      padding: 1em;
+      font-size: 1em;
+    }
   }
   .div-link {
     margin: 10px;
@@ -38,7 +39,6 @@ export const Ul = styled.ul`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     border-radius: 5px;
-
   }
   @media (max-width: 768px) {
     margin-top: 0px;
@@ -49,7 +49,6 @@ export const Ul = styled.ul`
     z-index: 1;
     top: 0;
     right: 0;
-    width: 150px;
     padding-bottom: 10px;
     padding-top: 3.5rem;
     padding-inline-start: 10px;
@@ -74,7 +73,7 @@ export const Ul = styled.ul`
     }
   }
 
-  @media ( max-width: 1500px) and (min-width: 769px) {
+  @media (max-width: 1500px) and (min-width: 769px) {
     .Navlink {
       padding: 10px 20px;
       font-size: 1em;
@@ -90,25 +89,37 @@ export const Ul = styled.ul`
   .activ {
     color: ${({ theme }) => theme.body};
     background-color: ${({ theme }) => theme.text};
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+    box-shadow:  0 0 0.5em 0 ${({ theme }) => theme.text};
+
+    :before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 12%;
+      background-color: ${({ theme }) => theme.text};
+      transform: translateX(-34%) perspective(1em) rotateX(40deg) scale(1, 0.23);
+      filter: blur(1em);
+      opacity: 0.3;
+    }
   }
 `;
 /* Logo */
 export const Nav = styled.nav`
-  border-bottom: 2px solid;
-  margin: 5px;
+  margin: 5px 0 30px 0;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-family: Mulish, sans-serif;
   @media (max-width: 768px) {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .logo {
     display: flex;
     align-items: center;
     flex-shrink: 0;
     flex-direction: row;
-
     padding-top: 5px;
     font-size: 2rem;
   }
@@ -136,7 +147,7 @@ export const Landing = styled.div`
   font-family: Mulish, sans-serif;
   text-align: center;
   @media (max-width: 768px) {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .avatar-img {
     position: relative;
@@ -154,7 +165,17 @@ export const Landing = styled.div`
     position: absolute;
     top: -7px;
   }
-
+  .skeleton {
+    animation: skeleton-loading 1s infinite alternate;
+  }
+  @keyframes skeleton-loading {
+    0% {
+      background-color: hsl(200, 20%, 70%);
+    }
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+  }
   .top {
     border-radius: 50%;
     margin: 0;
@@ -257,27 +278,26 @@ export const Port = styled.div`
     text-align: center;
   }
   @media (max-width: 768px) {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .Cards {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 0;
+    margin: auto;
   }
   .port-cate {
     font-size: 1.5rem;
-    margin-right: 100%;
-    margin-left: 25px;
-    }
+  margin: auto 0; 
+ }
 
   .card {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
+    margin: auto;
+    padding: 1%;
     border-radius: 10px;
   }
 
@@ -376,7 +396,7 @@ export const Port = styled.div`
 
 export const Me = styled.div`
   @media (max-width: 768px) {
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
   .about-container {
     display: flex;
@@ -416,7 +436,7 @@ export const Res = styled.iframe`
   margin: 0 25%;
   position: absolute;
   overflow: hidden;
-  
+
   @media (max-width: 767px) {
     width: 100%;
     height: 100%;
