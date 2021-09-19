@@ -21,7 +21,7 @@ function App() {
           <Portfolio />
         </Route>
         <Route path="/resume">
-          <Resume/>
+          <Resume />
         </Route>
       </>
     </Router>

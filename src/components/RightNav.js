@@ -34,12 +34,7 @@ const RightNav = ({ open }) => {
           </NavLink>
         </div>
         <div className="div-link">
-          <NavLink
-            to="/Resume"
-            className="Navlink"
-            activeClassName="activ"
-          
-          >
+          <NavLink to="/Resume" className="Navlink" activeClassName="activ">
             Resume
           </NavLink>
         </div>

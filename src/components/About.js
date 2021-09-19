@@ -7,16 +7,16 @@ export default class About extends Component {
       <Me>
         <div className="about-container">
           <div className="about-text">
-            
-              <h4>Hi, my name is</h4> <h1>Mattias Gulec.</h1><hr /> <br /> 
-              <p>– a freelance front-end
-              developer from Stockholm, Sweden. I have extensive experience in
-              working in different areas of development, always trying to figure
-              out the problems that comes with it and work towards a solution
-              which pleases my client and myself. Though I have a strong focus
-              on front-end development as well as React development, I can
-              confidently say that nothing stops me from learning new things and
-              trying to make the most out of my time.
+            <h4>Hi, my name is</h4> <h1>Mattias Gulec.</h1>
+            <hr /> <br />
+            <p>
+              – a freelance front-end developer from Stockholm, Sweden. I have
+              extensive experience in working in different areas of development,
+              always trying to figure out the problems that comes with it and
+              work towards a solution which pleases my client and myself. Though
+              I have a strong focus on front-end development as well as React
+              development, I can confidently say that nothing stops me from
+              learning new things and trying to make the most out of my time.
             </p>
             <hr />
             <p>

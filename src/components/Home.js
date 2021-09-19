@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Landing } from "../global";
-import {profile ,profileimg} from "../img/index";
+import { profile, profileimg } from "../img/index";
 const Home = () => {
   return (
     <Landing>
@@ -21,7 +21,6 @@ const Home = () => {
           src={profile}
         />
       </div>
-
       <div className="banner-text">
         <h1>Front-End Web Developer</h1>
         <p>HTML/CSS | JavaScript | React | Node.js</p>
@@ -32,7 +31,6 @@ const Home = () => {
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Facebook"
-
           >
             <motion.i
               className="fa fa-facebook-square"
@@ -43,7 +41,6 @@ const Home = () => {
               }}
             />
           </a>
-
           {/* Linked in */}
           <a
             href="https://www.linkedin.com/in/mattias-gulec-1bbb6a72/"
@@ -57,9 +54,9 @@ const Home = () => {
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.3 },
-              }}            />
+              }}
+            />
           </a>
-
           {/* Github */}
           <a
             href="https://github.com/Voltair88"
@@ -73,16 +70,15 @@ const Home = () => {
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.3 },
-              }}            />
+              }}
+            />
           </a>
-
           {/* Twitter */}
           <a
             href="https://twitter.com/mattegulec"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Twitter"
-
           >
             <motion.i
               className="fab fa-twitter-square"
@@ -90,7 +86,8 @@ const Home = () => {
               whileHover={{
                 scale: 1.1,
                 transition: { duration: 0.3 },
-              }}            />
+              }}
+            />
           </a>
         </div>
       </div>

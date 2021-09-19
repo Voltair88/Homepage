@@ -8,16 +8,18 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-      <IconContext.Provider value={{ size: "4.5rem", className: "global-class-name" }} >
-        <RiCodeBoxFill />
-      </IconContext.Provider>
-      <div className="name">
-        <p className="header">Mattias Gulec</p>
-        <p className="sub-head">Front-End Developer</p>
-</div>
+        <IconContext.Provider
+          value={{ size: "4.5rem", className: "global-class-name" }}
+        >
+          <RiCodeBoxFill />
+        </IconContext.Provider>
+        <div className="name">
+          <p className="header">Mattias Gulec</p>
+          <p className="sub-head">Front-End Developer</p>
+        </div>
       </div>
       <div className="divider"></div>
-      <Burger/>
+      <Burger />
     </Nav>
   );
 };

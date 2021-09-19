@@ -1,12 +1,7 @@
 import React from "react";
 import { Port } from "../global";
 import { motion } from "framer-motion";
-import {
-  blogimg,
-  stpeople,
-  football,
-  Quire,
-} from "../img/index";
+import { blogimg, stpeople, football, Quire } from "../img/index";
 
 const Portfolio = () => {
   return (
@@ -14,11 +9,13 @@ const Portfolio = () => {
       <h1 className="port-title">Portfolio</h1>
       <div className="Cards">
         <div className="card">
-        <h2 className="port-cate">Live</h2>
-
+          <h2 className="port-cate">Live</h2>
           <motion.div
             className="blogcard"
-            style={{ backgroundImage: `url(${blogimg})`, backgroundSize: "cover" }}
+            style={{
+              backgroundImage: `url(${blogimg})`,
+              backgroundSize: "cover",
+            }}
             whileHover={{
               scale: 1.03,
               transition: { duration: 0.3 },
@@ -55,8 +52,10 @@ const Portfolio = () => {
           </motion.div>
           <motion.div
             className="blogcard"
-            style={{ backgroundImage: `url(${stpeople})`, backgroundSize: "cover" }}
-
+            style={{
+              backgroundImage: `url(${stpeople})`,
+              backgroundSize: "cover",
+            }}
             whileHover={{
               scale: 1.03,
               transition: { duration: 0.3 },
@@ -95,11 +94,13 @@ const Portfolio = () => {
           </motion.div>
         </div>
         <div className="card">
-        <h2 className="port-cate">Github</h2>
-
+          <h2 className="port-cate">Github</h2>
           <motion.div
             className="blogcard"
-            style={{ backgroundImage: `url(${Quire})`, backgroundSize: "cover" }}
+            style={{
+              backgroundImage: `url(${Quire})`,
+              backgroundSize: "cover",
+            }}
             whileHover={{
               scale: 1.03,
               transition: { duration: 0.3 },
@@ -129,8 +130,10 @@ const Portfolio = () => {
           </motion.div>
           <motion.div
             className="blogcard"
-            style={{ backgroundImage: `url(${football})`, backgroundSize: "cover" }}
-
+            style={{
+              backgroundImage: `url(${football})`,
+              backgroundSize: "cover",
+            }}
             whileHover={{
               scale: 1.03,
               transition: { duration: 0.3 },
