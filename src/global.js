@@ -39,6 +39,8 @@ export const Ul = styled.ul`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.11,-0.66, 0.44, 0.84);
+
   }
   @media (max-width: 768px) {
     margin-top: 0px;
@@ -87,9 +89,8 @@ export const Ul = styled.ul`
     }
   }
   .activ {
-    color: ${({ theme }) => theme.body};
+    color: black;
     background-color: ${({ theme }) => theme.text};
-    transition: all 0.3s ease-in-out;
     cursor: default;
     box-shadow:  0 0 0.5em 0 ${({ theme }) => theme.text};
 
@@ -131,6 +132,7 @@ export const Nav = styled.nav`
   }
   .header {
     margin: 0;
+    color: ${({ theme }) => theme.text};
   }
   .sub-head {
     margin: 0;
