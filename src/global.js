@@ -186,6 +186,7 @@ export const Landing = styled.div`
     border: #333 solid 5px;
   }
   .bottom {
+    margin: 0;
     border-radius: 50%;
     width: 50vmin;
     height: 50vmin;

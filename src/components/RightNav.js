@@ -35,7 +35,7 @@ const RightNav = ({ open }) => {
         </div>
         <div className="div-link">
           <NavLink to="/Resume" className="Navlink" activeClassName="activ">
-            Resume
+            Resumé
           </NavLink>
         </div>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
