@@ -1,7 +1,7 @@
 import React from "react";
 import { Port } from "../global";
 import { motion } from "framer-motion";
-import { blogimg, stpeople, football, Quire } from "../img/index";
+import { blogimg, stpeople, football, Quire, freshkeeper } from "../img/index";
 
 const Portfolio = () => {
   return (
@@ -10,6 +10,46 @@ const Portfolio = () => {
       <div className="Cards">
         <div className="card">
           <h2 className="port-cate">Live</h2>
+          <motion.div
+            className="blogcard"
+            style={{
+              backgroundImage: `url(${freshkeeper})`,
+              backgroundSize: "cover",
+            }}
+            whileHover={{
+              scale: 1.03,
+              transition: { duration: 0.3 },
+            }}
+          >
+            <div className="card-content">
+              <h1 className="card-title">
+                Freshkeeper
+                <a
+                  href="https://github.com/Voltair88/freshkeeper-dev"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <i className="fa fa-github-square" />
+                </a>
+              </h1>
+              <p className="card-body">
+              An app that helps you keep track of you'r food items
+              </p>
+              <div className="contentBox">
+                <div id="first" className="buttonBox">
+                  <div className="border"></div>
+                  <div className="border"></div>
+                  <a
+                    href="https://freshkeeper.netlify.app"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <button className="card-button">Live</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
           <motion.div
             className="blogcard"
             style={{

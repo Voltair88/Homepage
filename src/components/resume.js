@@ -5,7 +5,7 @@ export default class Resume extends Component {
     return (
       <Res
         className="resume"
-        src="https://drive.google.com/file/d/1Xe4hOr0betBeiiLZjhaI7knFXpPGFr3-/preview"
+        src="https://drive.google.com/file/d/1my66AX1S9tTjPMkqMdkQ53Y1UpgVlQyZ/preview"
         type="application/pdf"
         title="resumé"
         allow="autoplay"

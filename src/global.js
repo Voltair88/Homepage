@@ -148,6 +148,7 @@ export const Nav = styled.nav`
 export const Landing = styled.div`
   font-family: Mulish, sans-serif;
   text-align: center;
+  margin-bottom: 20px;
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -232,6 +233,7 @@ export const Landing = styled.div`
     color: white;
     font-size: calc(8px + 1.5vw);
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .social-links {

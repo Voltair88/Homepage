@@ -23,7 +23,8 @@ const Home = () => {
       </div>
       <div className="banner-text">
         <h1>Front-End Web Developer</h1>
-        <p>HTML/CSS | JavaScript | React | Node.js</p>
+        <p>HTML/CSS | JavaScript | Typescript | React </p>
+        <p>React Native | Node.js | ExpressJS </p>
         <div className="social-links">
           {/* Facebook */}
           <a
