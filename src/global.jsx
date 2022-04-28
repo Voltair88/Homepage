@@ -39,8 +39,7 @@ export const Ul = styled.ul`
     color: ${({ theme }) => theme.text};
     text-decoration: none;
     border-radius: 5px;
-    transition: all 0.3s cubic-bezier(0.11,-0.66, 0.44, 0.84);
-
+    transition: all 0.3s cubic-bezier(0.11, -0.66, 0.44, 0.84);
   }
   @media (max-width: 768px) {
     margin-top: 0px;
@@ -92,7 +91,7 @@ export const Ul = styled.ul`
     color: black;
     background-color: ${({ theme }) => theme.text};
     cursor: default;
-    box-shadow:  0 0 0.5em 0 ${({ theme }) => theme.text};
+    box-shadow: 0 0 0.5em 0 ${({ theme }) => theme.text};
 
     :before {
       content: "";
@@ -154,7 +153,7 @@ export const Landing = styled.div`
   }
   .avatar-img {
     position: relative;
-    margin: 0.5% auto 5vh;
+    margin: 0.5% auto 2vh;
     border-radius: 50%;
     width: 50vmin;
     height: 50vmin;
@@ -276,6 +275,13 @@ export const Port = styled.div`
   *::after {
     box-sizing: border-box;
   }
+
+  .port-title {
+    font-family: Mulish, sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
   h1 {
     font-family: Mulish, sans-serif;
     font-size: 1.5rem;
@@ -285,117 +291,37 @@ export const Port = styled.div`
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-  .Cards {
+  .swiper {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: auto;
+    width: 80%;
+    height: 60vh;
   }
-  .port-cate {
-    font-size: 1.5rem;
-  margin: auto 0; 
- }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
 
-  .card {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 1%;
-    border-radius: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
   }
 
-  .blogcard {
-    margin: 10px;
-    border-radius: 5px;
-    padding: 15rem 0 0;
-    width: 250px;
-    height: auto;
-  }
-  .blogcard:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
-  }
-  .card-content {
-    border-radius: 0 0 5px 5px;
-    padding: 0.5em;
-    background: linear-gradient(
-      hsl(0 0% 0% / 0) 0%,
-      hsl(20 0% 0% / 0.6) 10%,
-      hsl(0 0% 0% / 0.8)
-    );
-  }
-
-  .card-title {
-    color: white;
-    position: relative;
-    padding: auto;
-    margin: auto;
-  }
-
-  .card-body {
-    color: white;
-  }
-
-  .contentBox {
-    width: 80px;
-    height: 30px;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .buttonBox {
-    margin: 0 20px 20px;
-    position: relative;
-    max-width: 200px;
-    min-width: 150px;
-    flex: 20%;
-  }
-
-  .border {
-    position: absolute;
-    background: none;
-    transition: all 0.5s ease-in-out;
-  }
-
-  #first > .border:nth-of-type(1) {
-    top: 0;
-    left: 0;
-    border-left: 1px solid white;
-    border-top: 1px solid white;
-    width: 30px;
-    height: 30px;
-  }
-
-  #first > .border:nth-of-type(2) {
-    bottom: 0;
-    right: 0;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
-    width: 30px;
-    height: 30px;
-  }
-
-  #first:hover .border {
-    width: 102%;
-    height: 105%;
-  }
-
-  .card-button {
+  .swiper-slide img {
+    display: block;
     width: 100%;
-    height: 30px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.27);
-    text-transform: uppercase;
-    color: white;
-    font-weight: 700;
-    letter-spacing: 1px;
-    border: none;
-    font-size: 15px;
-    outline: none;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    height: 100%;
+    object-fit: cover;
   }
 `;
 
