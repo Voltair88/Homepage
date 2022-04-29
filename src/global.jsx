@@ -288,8 +288,50 @@ export const Port = styled.div`
     margin: 0;
     text-align: center;
   }
-  @media (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .card-text {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    padding: 5em 0 4em 0;
+    margin: 0;
+    background: linear-gradient(
+      hsl(0 0% 0% / 0) 0%,
+      hsl(20 0% 0% / 0.6) 10%,
+      hsl(0 0% 0% / 0.8)
+    );
+  }
+  .card-button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
     font-size: 1rem;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 4px 12px;
+    border: 1px solid #000000;
+  }
+  .card-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
+  .swiper-container {
+    border-radius: 0 0 10px 10px;
   }
   .swiper {
     display: flex;
@@ -301,10 +343,8 @@ export const Port = styled.div`
     text-align: center;
     font-size: 18px;
     background: #fff;
-    width: 80%;
-    height: 60vh;
-
-    /* Center slide text vertically */
+    width: 100%;
+    height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -327,10 +367,10 @@ export const Port = styled.div`
   }
 
   .swiper-slide img {
-    display: block;
     width: 100%;
-    height: 100%;
+    height: 50vh;
     object-fit: cover;
+    border-radius: 10px;
   }
 `;
 
