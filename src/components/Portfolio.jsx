@@ -52,7 +52,7 @@ const Portfolio = () => {
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 10000,
+      delay: 3000,
       disableOnInteraction: false,
     },
     pagination: { true: ".swiper-pagination" },

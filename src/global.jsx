@@ -273,13 +273,6 @@ export const Port = styled.div`
   .port-title {
     font-family: Mulish, sans-serif;
     font-size: 2rem;
-    margin: 0;
-    padding: 0;
-  }
-  h1 {
-    font-family: Mulish, sans-serif;
-    font-size: 1.5rem;
-    margin: 0;
     text-align: center;
   }
   .card {
@@ -288,6 +281,7 @@ export const Port = styled.div`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 0 0 10px 10px;
   }
   .card-info {
     position: absolute;
@@ -296,11 +290,11 @@ export const Port = styled.div`
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 100%;
     height: 15vh;
     left: 0;
+    right: 0;
     padding-left: 20px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0px 10px 10px;
     background: rgb(66, 69, 76);
     background: linear-gradient(
       90deg,
@@ -310,12 +304,6 @@ export const Port = styled.div`
       rgba(66, 69, 76, 0.3) 65%,
       rgba(124, 126, 131, 0.1) 80%
     );
-  }
-  @media (max-width: 768px) {
-    .swiper-container {
-      width: 100% !important;
-      margin: 0 !important;
-    }
   }
   .card-title {
     position: absolute;
@@ -337,7 +325,7 @@ export const Port = styled.div`
     align-items: center;
     color: black;
     font-size: 1rem;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     width: 100%;
     bottom: 6vh;
     margin: 0;
@@ -364,7 +352,6 @@ export const Port = styled.div`
     border: 1px solid #ffffff;
   }
   .swiper-container {
-    border-radius: 0 0 10px 10px;
     padding-top: 2vh;
     width: 90%;
     margin: auto;
@@ -417,12 +404,18 @@ export const Port = styled.div`
   .swiper-pagination {
     z-index: 1 !important;
   }
+  @media (max-width: 768px) {
+    .swiper-slide img {
+      border-radius: 0 0 10px 10px;
+    }
+    .swiper-container {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
 `;
 
 export const Me = styled.div`
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
   .about-container {
     display: flex;
     flex-direction: column;
@@ -452,6 +445,9 @@ export const Me = styled.div`
   .about-text p {
     font-size: calc(10px + 1.2vw);
     margin-top: 5px;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;
 
