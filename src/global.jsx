@@ -270,12 +270,6 @@ export const Landing = styled.div`
 
 /* Portfolio */
 export const Port = styled.div`
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-  }
-
   .port-title {
     font-family: Mulish, sans-serif;
     font-size: 2rem;
@@ -295,35 +289,74 @@ export const Port = styled.div`
     justify-content: flex-start;
     align-items: center;
   }
+  .card-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 15vh;
+    left: 0;
+    padding-left: 20px;
+    border-radius: 0 0 5px 5px;
+    background: rgb(66, 69, 76);
+    background: linear-gradient(
+      90deg,
+      rgba(66, 69, 76, 0.8995973389355743) 0%,
+      rgba(66, 69, 76, 0.7) 25%,
+      rgba(66, 69, 76, 0.5) 46%,
+      rgba(66, 69, 76, 0.3) 65%,
+      rgba(124, 126, 131, 0.1) 80%
+    );
+  }
+  @media (max-width: 768px) {
+    .swiper-container {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
+  .card-title {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    bottom: 7vh;
+    font-size: 1.5rem;
+    font-family: Mulish, sans-serif;
+    text-align: center;
+    z-index: 1;
+  }
   .card-text {
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    color: black;
+    font-size: 1rem;
     border-radius: 0 0 5px 5px;
     width: 100%;
-    padding: 5em 0 4em 0;
+    bottom: 6vh;
     margin: 0;
-    background: linear-gradient(
-      hsl(0 0% 0% / 0) 0%,
-      hsl(20 0% 0% / 0.6) 10%,
-      hsl(0 0% 0% / 0.8)
-    );
   }
   .card-button {
+    z-index: 100 !important ;
     position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1vh;
     font-size: 1rem;
     text-decoration: none;
     background-color: #ffffff;
     color: #333333;
     padding: 4px 12px;
-    border: 1px solid #000000;
+    border: 1px solid #42454c;
+    border-radius: 8px;
   }
   .card-button:hover {
     background-color: #000000;
@@ -332,12 +365,13 @@ export const Port = styled.div`
   }
   .swiper-container {
     border-radius: 0 0 10px 10px;
+    padding-top: 2vh;
+    width: 90%;
+    margin: auto;
   }
   .swiper {
     display: flex;
     flex-direction: row;
-    width: 80%;
-    height: 60vh;
   }
   .swiper-slide {
     text-align: center;
@@ -345,6 +379,7 @@ export const Port = styled.div`
     background: #fff;
     width: 100%;
     height: 100%;
+    border-radius: 0 0 10px 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -361,16 +396,26 @@ export const Port = styled.div`
 
   .swiper-button-next {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath d='M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    top: 40%;
+  }
+  .swiper-button-next:after {
+    content: "";
   }
   .swiper-button-prev {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath d='M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+    top: 40%;
+  }
+  .swiper-button-prev:after {
+    content: "";
   }
 
   .swiper-slide img {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     object-fit: cover;
-    border-radius: 10px;
+  }
+  .swiper-pagination {
+    z-index: 1 !important;
   }
 `;
 
