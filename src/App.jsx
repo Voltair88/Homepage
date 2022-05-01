@@ -1,28 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Portfolio from "./components/Portfolio";
-import Resume from "./components/resume";
+import { BrowserRouter as Router } from "react-router-dom";
+import { Portfolio, About, Resume, Navbar, Landing } from "./components";
 
 function App() {
   return (
     <Router>
       <>
-        <Navbar />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/About">
+        <section id="home">
+          <Navbar />
+          <Landing />
+        </section>
+        <section id="about">
           <About />
-        </Route>
-        <Route path="/Portfolio">
+        </section>
+        <section id="portfolio">
           <Portfolio />
-        </Route>
-        <Route path="/resume">
+        </section>
+        <section id="resume">
           <Resume />
-        </Route>
+        </section>
       </>
     </Router>
   );

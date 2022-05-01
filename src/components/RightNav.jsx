@@ -1,11 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import { Ul } from "../global";
 import { useDarkMode } from "../useDarkMode";
 import Toggle from "./Toggle";
 import { lightTheme, darkTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "../global";
+import { NavHashLink } from "react-router-hash-link";
 
 const RightNav = ({ open }) => {
   const [theme, toggleTheme, componentMounted] = useDarkMode();
@@ -19,24 +19,32 @@ const RightNav = ({ open }) => {
       <GlobalStyles />
       <Ul open={open}>
         <div className="div-link">
-          <NavLink exact to="/" className="Navlink" activeClassName="activ">
+          <NavHashLink to="/#home" className="Navlink" activeClassName="activ">
             Home
-          </NavLink>
+          </NavHashLink>
         </div>
         <div className="div-link">
-          <NavLink to="/about" className="Navlink" activeClassName="activ">
+          <NavHashLink to="/#about" className="Navlink" activeClassName="activ">
             About
-          </NavLink>
+          </NavHashLink>
         </div>
         <div className="div-link">
-          <NavLink to="/portfolio" className="Navlink" activeClassName="activ">
+          <NavHashLink
+            to="/#portfolio"
+            className="Navlink"
+            activeClassName="activ"
+          >
             Portfolio
-          </NavLink>
+          </NavHashLink>
         </div>
         <div className="div-link">
-          <NavLink to="/Resume" className="Navlink" activeClassName="activ">
+          <NavHashLink
+            to="/#resume"
+            className="Navlink"
+            activeClassName="activ"
+          >
             Resumé
-          </NavLink>
+          </NavHashLink>
         </div>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
       </Ul>

@@ -144,7 +144,7 @@ export const Nav = styled.nav`
 `;
 
 /* Landingpage */
-export const Landing = styled.div`
+export const Land = styled.div`
   font-family: Mulish, sans-serif;
   text-align: center;
   margin-bottom: 20px;
@@ -205,7 +205,7 @@ export const Landing = styled.div`
     opacity: 0;
   }
 
-  .banner-text {
+  .contact-text {
     position: relative;
     margin: auto;
     background-color: black;
@@ -214,7 +214,7 @@ export const Landing = styled.div`
     border-radius: 10px;
   }
 
-  .banner-text h1 {
+  .contact-text h1 {
     color: white;
     font-size: calc(16px + 3vw);
     font-weight: bold;
@@ -222,13 +222,13 @@ export const Landing = styled.div`
     margin: auto;
   }
 
-  .banner-text hr {
+  .contact-text hr {
     border-top: 5px;
     width: 50%;
     margin: auto;
   }
 
-  .banner-text p {
+  .contact-text p {
     color: white;
     font-size: calc(8px + 1.5vw);
     margin-top: 0px;
@@ -462,5 +462,33 @@ export const Res = styled.iframe`
     width: 100%;
     height: 100%;
     margin: 0;
+  }
+`;
+
+export const ToggleContainer = styled.button`
+  display: flex;
+  justify-content: space-between;
+  background: ${({ theme }) => theme.body};
+  width: 5rem;
+  height: 3rem;
+  margin: 7px auto 0 auto;
+  border-radius: 30px;
+  border: 2px solid ${({ theme }) => theme.toggleBorder};
+  font-size: 0.5rem;
+  padding: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+  svg {
+    width: 2rem;
+    height: auto;
+    transition: all 0.5s linear;
+    &:first-child {
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateX(0)" : "translateX(200px)"};
+    }
+    &:nth-child(2) {
+      transform: ${({ lightTheme }) =>
+        lightTheme ? "translateX(-200px)" : "translateX(0)"};
+    }
   }
 `;
