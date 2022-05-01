@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Landing } from "../global";
 import { profile, profileimg } from "../img/index";
+
 const Home = () => {
   return (
     <Landing>

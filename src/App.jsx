@@ -9,21 +9,19 @@ import Resume from "./components/resume";
 function App() {
   return (
     <Router>
-      <>
-        <Navbar />
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/About">
-          <About />
-        </Route>
-        <Route path="/Portfolio">
-          <Portfolio />
-        </Route>
-        <Route path="/resume">
-          <Resume />
-        </Route>
-      </>
+      <Navbar />
+      <Route exact path="/">
+        <Home />
+      </Route>
+      <Route path="/About">
+        <About />
+      </Route>
+      <Route path="/Portfolio">
+        <Portfolio />
+      </Route>
+      <Route path="/resume">
+        <Resume />
+      </Route>
     </Router>
   );
 }

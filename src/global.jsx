@@ -47,7 +47,7 @@ export const Ul = styled.ul`
     background-color: #0d2538;
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    z-index: 1;
+    z-index: 10;
     top: 0;
     right: 0;
     padding-bottom: 10px;
@@ -292,7 +292,7 @@ export const Port = styled.div`
     align-items: flex-start;
     height: 15vh;
     left: 0;
-    right: 0;
+    width: 40%;
     padding-left: 20px;
     border-radius: 0 0px 10px 10px;
     background: rgb(66, 69, 76);
@@ -300,9 +300,10 @@ export const Port = styled.div`
       90deg,
       rgba(66, 69, 76, 0.8995973389355743) 0%,
       rgba(66, 69, 76, 0.7) 25%,
-      rgba(66, 69, 76, 0.5) 46%,
-      rgba(66, 69, 76, 0.3) 65%,
-      rgba(124, 126, 131, 0.1) 80%
+      rgba(66, 69, 76, 0.3) 46%,
+      rgba(66, 69, 76, 0.2) 65%,
+      rgba(124, 126, 131, 0.05) 80%,
+      rgba(66, 69, 76, 0.01) 100%
     );
   }
   .card-title {
@@ -311,7 +312,7 @@ export const Port = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #fefefe;
     bottom: 7vh;
     font-size: 1.5rem;
     font-family: Mulish, sans-serif;
@@ -323,7 +324,7 @@ export const Port = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: black;
+    color: #fefefe;
     font-size: 1rem;
     border-radius: 0 0 10px 10px;
     width: 100%;
@@ -340,7 +341,7 @@ export const Port = styled.div`
     margin-bottom: 1vh;
     font-size: 1rem;
     text-decoration: none;
-    background-color: #ffffff;
+    background-color: #fefefe;
     color: #333333;
     padding: 4px 12px;
     border: 1px solid #42454c;
@@ -348,8 +349,8 @@ export const Port = styled.div`
   }
   .card-button:hover {
     background-color: #000000;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+    color: #fefefe;
+    border: 1px solid #fefefe;
   }
   .swiper-container {
     padding-top: 2vh;
@@ -363,7 +364,7 @@ export const Port = styled.div`
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #fefefe;
     width: 100%;
     height: 100%;
     border-radius: 0 0 10px 10px;
