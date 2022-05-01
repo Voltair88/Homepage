@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import { Me } from "../global";
 
 export default function About() {

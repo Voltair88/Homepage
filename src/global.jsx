@@ -17,13 +17,22 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     margin: 0 auto;
     font-family: Mulish, sans-serif;
-  }`;
+  }
+  
+  section:not(#home) {
+    margin: 10% auto;
+  }
+  
+  `;
 /* Navbar */
 export const Ul = styled.ul`
-  display: flex;
+  position: fixed;
+  display: flex-end;
   flex-flow: row nowrap;
-  font-size: 1.4em;
+  font-size: 1em;
+  top: 10%;
   margin: 0 auto 10px auto;
+  z-index: 20;
 
   @media (pointer: coarse) {
     * {
@@ -34,13 +43,20 @@ export const Ul = styled.ul`
   .div-link {
     margin: 10px;
   }
-  .Navlink {
-    padding: 10px 30px;
-    color: ${({ theme }) => theme.text};
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s cubic-bezier(0.11, -0.66, 0.44, 0.84);
+  @media (min-width: 768px) {
+    .Navlink {
+      padding: 10px 30px;
+      color: ${({ theme }) => theme.text};
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s cubic-bezier(0.11, -0.66, 0.44, 0.84);
+    }
+    .Navlink:active {
+      background: lightblue;
+      color: lightcyan;
+    }
   }
+
   @media (max-width: 768px) {
     margin-top: 0px;
     flex-flow: column nowrap;
@@ -85,23 +101,6 @@ export const Ul = styled.ul`
     .header-right {
       float: none;
       justify-content: flex-start;
-    }
-  }
-  .activ {
-    color: black;
-    background-color: ${({ theme }) => theme.text};
-    cursor: default;
-    box-shadow: 0 0 0.5em 0 ${({ theme }) => theme.text};
-
-    :before {
-      content: "";
-      position: absolute;
-      width: 10%;
-      height: 12%;
-      background-color: ${({ theme }) => theme.text};
-      transform: translateX(-34%) perspective(1em) rotateX(40deg) scale(1, 0.23);
-      filter: blur(1em);
-      opacity: 0.3;
     }
   }
 `;
@@ -353,7 +352,7 @@ export const Port = styled.div`
   }
   .swiper-container {
     padding-top: 2vh;
-    width: 90%;
+    width: 70%;
     margin: auto;
   }
   .swiper {
@@ -489,6 +488,40 @@ export const ToggleContainer = styled.button`
     &:nth-child(2) {
       transform: ${({ lightTheme }) =>
         lightTheme ? "translateX(-200px)" : "translateX(0)"};
+    }
+  }
+`;
+
+export const StyledBurger = styled.div`
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 20;
+  display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+  }
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: ${({ open }) => (open ? "#ccc" : "#fff")};
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+    &:nth-child(1) {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+    &:nth-child(2) {
+      transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+      opacity: ${({ open }) => (open ? 0 : 1)};
+    }
+    &:nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
   }
 `;

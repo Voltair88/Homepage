@@ -63,7 +63,6 @@ const Portfolio = () => {
   };
   return (
     <Port>
-      <h1 className="port-title">Portfolio</h1>
       <Swiper {...swiperOptions}>
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>

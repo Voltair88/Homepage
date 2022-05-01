@@ -19,30 +19,22 @@ const RightNav = ({ open }) => {
       <GlobalStyles />
       <Ul open={open}>
         <div className="div-link">
-          <NavHashLink to="/#home" className="Navlink" activeClassName="activ">
+          <NavHashLink to="/#home" className="Navlink">
             Home
           </NavHashLink>
         </div>
         <div className="div-link">
-          <NavHashLink to="/#about" className="Navlink" activeClassName="activ">
+          <NavHashLink to="/#about" className="Navlink">
             About
           </NavHashLink>
         </div>
         <div className="div-link">
-          <NavHashLink
-            to="/#portfolio"
-            className="Navlink"
-            activeClassName="activ"
-          >
+          <NavHashLink to="/#portfolio" className="Navlink">
             Portfolio
           </NavHashLink>
         </div>
         <div className="div-link">
-          <NavHashLink
-            to="/#resume"
-            className="Navlink"
-            activeClassName="activ"
-          >
+          <NavHashLink to="/#resume" className="Navlink">
             Resumé
           </NavHashLink>
         </div>
