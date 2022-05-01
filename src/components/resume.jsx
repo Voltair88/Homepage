@@ -9,6 +9,7 @@ export default function Resume() {
       title="resumé"
       allow="autoplay"
       frameBorder="1"
+      loading="lazy"
     ></Res>
   );
 }

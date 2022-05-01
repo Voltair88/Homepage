@@ -71,7 +71,7 @@ const Portfolio = () => {
             <div className="swiper-button-next"></div>
 
             <div className="card">
-              <img src={slide.img} alt={slide.alt} />
+              <img src={slide.img} alt={slide.alt} loading="lazy" />
               <div className="card-info">
                 <h2 className="card-title">{slide.title}</h2>
                 <p className="card-text">{slide.text}</p>
