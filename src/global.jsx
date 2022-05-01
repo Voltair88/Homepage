@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 export const Ul = styled.ul`
   display: flex;
   flex-flow: row nowrap;
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin: 0 auto 10px auto;
 
   @media (pointer: coarse) {
