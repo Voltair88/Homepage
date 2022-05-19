@@ -26,13 +26,11 @@ export const GlobalStyles = createGlobalStyle`
   `;
 /* Navbar */
 export const Ul = styled.ul`
-  position: fixed;
   display: flex-end;
   flex-flow: row nowrap;
   font-size: 1em;
-  top: 10%;
-  margin: 0 auto 10px auto;
-  z-index: 20;
+  top: 10em;
+  margin: 0 auto 0 auto;
 
   @media (pointer: coarse) {
     * {
@@ -505,6 +503,7 @@ export const StyledBurger = styled.div`
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
+    display: none;
   }
   div {
     width: 2rem;

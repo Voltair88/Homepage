@@ -18,7 +18,7 @@ const RightNav = ({ open }) => {
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
       <Ul open={open}>
-        <div className="div-link">
+        {/*         <div className="div-link">
           <NavHashLink to="/#home" className="Navlink">
             Home
           </NavHashLink>
@@ -38,6 +38,7 @@ const RightNav = ({ open }) => {
             Resumé
           </NavHashLink>
         </div>
+ */}{" "}
         <Toggle theme={theme} toggleTheme={toggleTheme} />
       </Ul>
     </ThemeProvider>
