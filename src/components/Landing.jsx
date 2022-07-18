@@ -27,7 +27,7 @@ export default function Landing() {
       <div className="contact-text">
         <h1>Front-End Web Developer</h1>
         <p>HTML/CSS | JavaScript | Typescript | React </p>
-        <p>React Native | Node.js | ExpressJS </p>
+        <p>React Native | Vue | Flutter </p>
         <div className="social-links">
           {/* Facebook */}
           <a

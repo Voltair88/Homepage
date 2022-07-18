@@ -1,6 +1,12 @@
 import React from "react";
 import { Port } from "../global";
-import { blogimg, stpeople, football, Quire, freshkeeper } from "../img/index";
+import {
+  blogimg,
+  ZeldaArena,
+  football,
+  Quire,
+  freshkeeper,
+} from "../img/index";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
@@ -9,18 +15,11 @@ import "swiper/swiper.min.css";
 SwiperCore.use([Autoplay, Navigation, Pagination]);
 const slides = [
   {
-    img: blogimg,
-    alt: "blogimg",
-    title: "Blog",
-    text: "A blog made with node and ejs.",
-    href: "https://github.com/Voltair88/node-test",
-  },
-  {
-    img: stpeople,
-    alt: "stpeople",
-    title: "Star Wars API",
-    text: "A simple API for Star Wars data.",
-    href: "https://github.com/Voltair88/star-wars-app",
+    img: ZeldaArena,
+    alt: "Zelda Arena",
+    title: "Zelda Arena",
+    text: "A game made in Typescript and Javascript where you eliminate the enemy to get the highest score",
+    href: "https://github.com/Voltair88/Zelda_Arena",
   },
   {
     img: football,
@@ -30,18 +29,25 @@ const slides = [
     href: "https://github.com/Voltair88/fe20tp2_bev_-5-",
   },
   {
-    img: Quire,
-    alt: "quire",
-    title: "Quire",
-    text: "Quire is an online note-taking application.",
-    href: "https://github.com/Voltair88/fe20tp1_-Vellum-",
+    img: freshkeeper,
+    alt: "FreshkeeperApp",
+    title: "FreshkeeperApp",
+    text: "An app that helps you keep track of you'r food items",
+    href: "https://github.com/Voltair88/freshkeeperApp",
   },
   {
     img: freshkeeper,
-    alt: "freshkeeper",
+    alt: "Freshkeeper",
     title: "Freshkeeper",
-    text: "An app that helps you keep track of you'r food items",
+    text: "A webbapp that helps you keep track of you'r food items",
     href: "https://github.com/Voltair88/freshkeeper-dev",
+  },
+  {
+    img: blogimg,
+    alt: "blogimg",
+    title: "Blog",
+    text: "A blog made with node and ejs.",
+    href: "https://github.com/Voltair88/node-test",
   },
 ];
 

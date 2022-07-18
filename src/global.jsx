@@ -308,7 +308,8 @@ export const Port = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     bottom: 7vh;
     font-size: 1.5rem;
     font-family: Mulish, sans-serif;
@@ -320,7 +321,8 @@ export const Port = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: black;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     border-radius: 0 0 10px 10px;
     width: 100%;
