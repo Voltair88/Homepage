@@ -2,25 +2,24 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Portfolio, About, Resume, Navbar, Landing } from "./components";
+import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 
 function App() {
   return (
     <Router>
-      <>
-        <section id="home">
-          <Navbar />
+      <ParallaxProvider>
+        <Navbar />
+        <Parallax speed={-10} translateY={[50, -50, "easyInOutQuint"]}>
           <Landing />
-        </section>
-        <section id="about">
+        </Parallax>
+        <Parallax speed={-10} translateY={[50, -50, "easyInOutQuint"]}>
           <About />
-        </section>
-        <section id="portfolio">
+        </Parallax>
+        <Parallax speed={-10} translateY={[50, -50, "easyInOutQuint"]}>
           <Portfolio />
-        </section>
-        <section id="resume">
-          <Resume />
-        </section>
-      </>
+        </Parallax>
+        <Resume />
+      </ParallaxProvider>
     </Router>
   );
 }

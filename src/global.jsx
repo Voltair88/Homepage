@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.gradient};
     color: ${({ theme }) => theme.text};
-    margin: 0 auto;
+    margin: auto;
     font-family: Mulish, sans-serif;
   }
   
@@ -267,6 +267,7 @@ export const Land = styled.div`
 
 /* Portfolio */
 export const Port = styled.div`
+  margin: 50px 0;
   .port-title {
     font-family: Mulish, sans-serif;
     font-size: 2rem;

@@ -1,12 +1,6 @@
 import React from "react";
 import { Port } from "../global";
-import {
-  blogimg,
-  ZeldaArena,
-  football,
-  Quire,
-  freshkeeper,
-} from "../img/index";
+import { blogimg, ZeldaArena, football, freshkeeper } from "../img/index";
 import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.min.css";
@@ -30,16 +24,16 @@ const slides = [
   },
   {
     img: freshkeeper,
-    alt: "FreshkeeperApp",
-    title: "FreshkeeperApp",
-    text: "An app that helps you keep track of you'r food items",
+    alt: "Freshkeeper mobile App",
+    title: "Freshkeeper mobile App",
+    text: "An app that helps you keep track of your food items",
     href: "https://github.com/Voltair88/freshkeeperApp",
   },
   {
     img: freshkeeper,
-    alt: "Freshkeeper",
-    title: "Freshkeeper",
-    text: "A webbapp that helps you keep track of you'r food items",
+    alt: "Freshkeeper Web App",
+    title: "Freshkeeper Web App",
+    text: "A webbapp that helps you keep track of your food items",
     href: "https://github.com/Voltair88/freshkeeper-dev",
   },
   {
@@ -74,7 +68,6 @@ const Portfolio = () => {
           <SwiperSlide key={i}>
             <div className="swiper-button-prev"></div>
             <div className="swiper-button-next"></div>
-
             <div className="card">
               <img src={slide.img} alt={slide.alt} loading="lazy" />
               <div className="card-info">

@@ -4,7 +4,7 @@ export default function Resume() {
   return (
     <Res
       className="resume"
-      src="https://drive.google.com/file/d/1my66AX1S9tTjPMkqMdkQ53Y1UpgVlQyZ/preview"
+      src="https://drive.google.com/file/d/1aHiUUch0MehgI9NizzVsevujBWznUN0R/preview"
       type="application/pdf"
       title="resumé"
       allow="autoplay"
