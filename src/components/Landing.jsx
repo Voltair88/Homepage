@@ -1,29 +1,19 @@
 import React from "react";
-import { profile, profileimg } from "../img/index";
+import { profile } from "../img/index";
 import { motion } from "framer-motion";
 import { Land } from "../global";
 
 export default function Landing() {
   return (
     <Land>
-      <div className="avatar-img">
-        <img
-          className="bottom skeleton"
-          alt="profile"
-          rel="preload"
-          as="image"
-          src={profileimg}
-          loading="lazy"
-        />
-        <img
-          className="top skeleton"
-          alt="profile"
-          rel="preload"
-          as="image"
-          src={profile}
-          loading="lazy"
-        />
-      </div>
+      <img
+        className="top skeleton"
+        alt="profile"
+        rel="preload"
+        as="image"
+        src={profile}
+        loading="lazy"
+      />
       <div className="contact-text">
         <h1>Front-End Web Developer</h1>
         <p>HTML/CSS | JavaScript | Typescript | React </p>
