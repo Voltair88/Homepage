@@ -179,7 +179,7 @@ export const Land = styled.div`
     border-radius: 50%;
     margin: 0;
     width: 50vmin;
-    height: 50vmin;
+    height: auto;
     border: #333 solid 5px;
   }
 
@@ -194,7 +194,7 @@ export const Land = styled.div`
 
   .contact-text h1 {
     color: white;
-    font-size: calc(16px + 3vw);
+    font-size: 1rem;
     font-weight: bold;
     padding: 1px;
     margin: auto;

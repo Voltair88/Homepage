@@ -12,7 +12,6 @@ export default function Landing() {
         rel="preload"
         as="image"
         src={profile}
-        loading="lazy"
       />
       <div className="contact-text">
         <h1>Front-End Web Developer</h1>
