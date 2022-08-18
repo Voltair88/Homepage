@@ -182,25 +182,6 @@ export const Land = styled.div`
     height: 50vmin;
     border: #333 solid 5px;
   }
-  .bottom {
-    margin: 0;
-    border-radius: 50%;
-    width: 50vmin;
-    height: 50vmin;
-    border: #333 solid 5px;
-  }
-  .avatar-img img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .avatar-img img.top:hover {
-    opacity: 0;
-  }
 
   .contact-text {
     position: relative;
