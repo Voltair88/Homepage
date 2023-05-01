@@ -24,84 +24,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   `;
-/* Navbar */
-export const Ul = styled.ul`
-  display: flex-end;
-  flex-flow: row nowrap;
-  font-size: 1em;
-  top: 10em;
-  margin: 0 auto 0 auto;
 
-  @media (pointer: coarse) {
-    * {
-      padding: 1em;
-      font-size: 1em;
-    }
-  }
-  .div-link {
-    margin: 10px;
-  }
-  @media (min-width: 768px) {
-    .Navlink {
-      padding: 10px 30px;
-      color: ${({ theme }) => theme.text};
-      text-decoration: none;
-      border-radius: 5px;
-      transition: all 0.3s cubic-bezier(0.11, -0.66, 0.44, 0.84);
-    }
-    .Navlink:active {
-      background: lightblue;
-      color: lightcyan;
-    }
-  }
-
-  @media (max-width: 768px) {
-    margin-top: 0px;
-    flex-flow: column nowrap;
-    background-color: #0d2538;
-    position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    z-index: 10;
-    top: 0;
-    right: 0;
-    padding-bottom: 10px;
-    padding-top: 3.5rem;
-    padding-inline-start: 10px;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-
-    .Navlink {
-      text-decoration: none;
-      color: #fff;
-      border-radius: 8px;
-      font-size: 1em;
-    }
-  }
-  .div-link {
-    margin-top: 15px;
-    margin-right: 5px;
-  }
-  @media (max-width: 768px) {
-    .div-link {
-      padding: 10px;
-      margin: 15px;
-    }
-  }
-
-  @media (max-width: 1500px) and (min-width: 769px) {
-    .Navlink {
-      padding: 10px 20px;
-      font-size: 1em;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .header-right {
-      float: none;
-      justify-content: flex-start;
-    }
-  }
-`;
 /* Logo */
 export const Nav = styled.nav`
   margin: 5px 0 30px 0;
@@ -109,6 +32,7 @@ export const Nav = styled.nav`
   flex-direction: row;
   align-items: center;
   font-family: Mulish, sans-serif;
+  margin-bottom: 7rem;
   @media (max-width: 768px) {
     font-size: 1rem;
   }
@@ -148,22 +72,6 @@ export const Land = styled.div`
   @media (max-width: 768px) {
     font-size: 1rem;
   }
-  .avatar-img {
-    position: relative;
-    margin: 0.5% auto 2vh;
-    border-radius: 50%;
-    width: 50vmin;
-    height: 50vmin;
-  }
-  .avatar-msg {
-    pointer-events: none;
-    margin: 5px;
-  }
-
-  .MuiSvgIcon-root {
-    position: absolute;
-    top: -7px;
-  }
   .skeleton {
     animation: skeleton-loading 1s infinite alternate;
   }
@@ -175,34 +83,32 @@ export const Land = styled.div`
       background-color: hsl(200, 20%, 95%);
     }
   }
-  .top {
-    border-radius: 50%;
+  img {
     margin: 0;
+    border-radius: 50%;
     width: 50vmin;
-    height: auto;
+    height: 50vmin;
     border: #333 solid 5px;
   }
 
   .contact-text {
     position: relative;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 12rem auto;
+    padding: 10px;
     background-color: black;
     opacity: 0.8;
-    width: 65vw;
+    width: 80vw;
+    height: 28rem;
     border-radius: 10px;
   }
 
   .contact-text h1 {
     color: white;
-    font-size: 1rem;
+    font-size: calc(16px + 3vw);
     font-weight: bold;
     padding: 1px;
-    margin: auto;
-  }
-
-  .contact-text hr {
-    border-top: 5px;
-    width: 50%;
     margin: auto;
   }
 
@@ -222,7 +128,20 @@ export const Land = styled.div`
 
   .social-links i {
     font-size: 10vmin;
-    padding: 10px;
+    padding: 3rem 1rem;
+    transition: 0.5s ease-in-out;
+  }
+
+  .social-links:first-child {
+    padding-left: 0px;
+  }
+
+  .social-links:last-child {
+    padding-right: 0px;
+  }
+
+  .social-links i:hover {
+    transform: scale(1.1);
   }
 
   .social-links a {
@@ -244,11 +163,28 @@ export const Land = styled.div`
   .fa-twitter-square:hover {
     color: #1da1f2;
   }
+  @media screen and (max-width: 768px) {
+    img {
+      width: 80vmin;
+      height: 80vmin;
+    }
+    .contact-text {
+      margin: 3rem auto;
+      height: 20rem;
+    }
+    .social-links i {
+      font-size: 4rem;
+      padding: 1rem 0.5rem;
+    }
+  }
 `;
 
 /* Portfolio */
 export const Port = styled.div`
-  margin: 50px 0;
+  margin: 4rem;
+  @media screen and (max-width: 768px) {
+    margin: 2rem;
+  }
   .port-title {
     font-family: Mulish, sans-serif;
     font-size: 2rem;
@@ -264,14 +200,12 @@ export const Port = styled.div`
   }
   .card-info {
     position: absolute;
+    width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 15vh;
-    left: 0;
-    right: 0;
     padding-left: 20px;
     border-radius: 0 0px 10px 10px;
     background: rgb(66, 69, 76);
@@ -285,47 +219,45 @@ export const Port = styled.div`
     );
   }
   .card-title {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    bottom: 7vh;
     font-size: 1.5rem;
     font-family: Mulish, sans-serif;
     text-align: center;
     z-index: 1;
   }
   .card-text {
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     color: white;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     font-size: 1rem;
     border-radius: 0 0 10px 10px;
     width: 100%;
-    bottom: 6vh;
     margin: 0;
+  }
+  .card-stack {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3vh 0;
   }
   .card-button {
     z-index: 100 !important ;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 1vh;
     font-size: 1rem;
     text-decoration: none;
     background-color: #ffffff;
     color: #333333;
     padding: 4px 12px;
-    border: 1px solid #42454c;
-    border-radius: 8px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    width: 6rem;
+    height: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
   }
   .card-button:hover {
     background-color: #000000;
@@ -342,24 +274,14 @@ export const Port = styled.div`
     flex-direction: row;
   }
   .swiper-slide {
-    text-align: center;
+    text-align: flex-start;
     font-size: 18px;
     background: #fff;
     width: 100%;
     height: 100%;
     border-radius: 0 0 10px 10px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
   }
 
   .swiper-button-next {
@@ -387,6 +309,7 @@ export const Port = styled.div`
   }
   @media (max-width: 768px) {
     .swiper-slide img {
+      width: 100%;
       border-radius: 0 0 10px 10px;
     }
     .swiper-container {
@@ -432,12 +355,22 @@ export const Me = styled.div`
   }
 `;
 
-export const Res = styled.iframe`
-  width: 50%;
-  height: 88%;
-  margin: 0 25%;
-  position: absolute;
-  overflow: hidden;
+export const Res = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+
+  iframe {
+    width: 80vw;
+    height: 80vh;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+  }
 
   @media (max-width: 767px) {
     width: 100%;

@@ -1,7 +1,6 @@
 import React from "react";
-import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
-import NightsStayOutlinedIcon from "@material-ui/icons/NightsStayOutlined";
 import { ToggleContainer } from "../global";
+import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === "dark";
@@ -11,9 +10,14 @@ const Toggle = ({ theme, toggleTheme }) => {
       lightTheme={isLight}
       onClick={toggleTheme}
       aria-label="toggle dark/light mode"
+      style={
+        isLight
+          ? { backgroundColor: "#c9c9c9" }
+          : { backgroundColor: "#282c36" }
+      }
     >
-      <WbSunnyRoundedIcon />
-      <NightsStayOutlinedIcon />
+      <BsFillSunFill style={{ color: "black" }} />
+      <BsMoon style={{ color: "white" }} />
     </ToggleContainer>
   );
 };

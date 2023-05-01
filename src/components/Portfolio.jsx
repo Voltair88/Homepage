@@ -52,10 +52,10 @@ const Portfolio = () => {
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 3000,
+      delay: 300000,
       disableOnInteraction: false,
     },
-    pagination: { true: ".swiper-pagination" },
+    pagination: { el: ".swiper-pagination", clickable: true },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -64,23 +64,26 @@ const Portfolio = () => {
   return (
     <Port>
       <Swiper {...swiperOptions}>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-button-next"></div>
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <div className="swiper-button-prev"></div>
-            <div className="swiper-button-next"></div>
             <div className="card">
               <img src={slide.img} alt={slide.alt} loading="lazy" />
               <div className="card-info">
                 <h2 className="card-title">{slide.title}</h2>
                 <p className="card-text">{slide.text}</p>
-                <a
-                  href={slide.href}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  className="card-button"
-                >
-                  View
-                </a>
+                <div className="card-stack">
+                  <a
+                    href={slide.href}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="card-button"
+                  >
+                    View
+                  </a>
+                </div>
               </div>
             </div>
           </SwiperSlide>

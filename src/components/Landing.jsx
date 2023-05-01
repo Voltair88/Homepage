@@ -1,17 +1,16 @@
 import React from "react";
-import { profile } from "../img/index";
-import { motion } from "framer-motion";
 import { Land } from "../global";
-
+import profile from "../img/profile.webp";
 export default function Landing() {
   return (
     <Land>
       <img
-        className="top skeleton"
+        className="skeleton"
         alt="profile"
         rel="preload"
         as="image"
         src={profile}
+        loading="lazy"
       />
       <div className="contact-text">
         <h1>Front-End Web Developer</h1>
@@ -25,14 +24,7 @@ export default function Landing() {
             target="_blank"
             aria-label="Facebook"
           >
-            <motion.i
-              className="fa fa-facebook-square"
-              aria-hidden="true"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-            />
+            <i className="fa fa-facebook-square" aria-hidden="true" />
           </a>
           {/* Linked in */}
           <a
@@ -41,14 +33,7 @@ export default function Landing() {
             target="_blank"
             aria-label="Linked in"
           >
-            <motion.i
-              className="fab fa-linkedin"
-              aria-hidden="true"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-            />
+            <i className="fab fa-linkedin" aria-hidden="true" />
           </a>
           {/* Github */}
           <a
@@ -57,14 +42,7 @@ export default function Landing() {
             target="_blank"
             aria-label="Github"
           >
-            <motion.i
-              className="fa fa-github-square"
-              aria-hidden="true"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-            />
+            <i className="fa fa-github-square" aria-hidden="true" />
           </a>
           {/* Twitter */}
           <a
@@ -73,14 +51,7 @@ export default function Landing() {
             target="_blank"
             aria-label="Twitter"
           >
-            <motion.i
-              className="fab fa-twitter-square"
-              aria-hidden="true"
-              whileHover={{
-                scale: 1.1,
-                transition: { duration: 0.3 },
-              }}
-            />
+            <i className="fab fa-twitter-square" aria-hidden="true" />
           </a>
         </div>
       </div>

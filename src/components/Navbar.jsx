@@ -1,25 +1,31 @@
 import React from "react";
-import Burger from "./Burger";
 import { Nav } from "../global";
 import { RiCodeBoxFill } from "react-icons/ri";
 import { IconContext } from "react-icons";
+import Toggle from "./Toggle";
+import { lightTheme, darkTheme } from "../theme";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "../global";
+import { useDarkMode } from "../useDarkMode";
 
 const Navbar = () => {
+  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const themeMode = theme === "dark" ? lightTheme : darkTheme;
+
   return (
     <Nav>
-      <div className="logo">
-        <IconContext.Provider
-          value={{ size: "4.5rem", className: "global-class-name" }}
-        >
-          <RiCodeBoxFill />
-        </IconContext.Provider>
-        <div className="name">
-          <p className="header">Mattias Gulec</p>
-          <p className="sub-head">Front-End Developer</p>
+      <ThemeProvider theme={themeMode}>
+        <GlobalStyles />
+        <div className="logo">
+          <RiCodeBoxFill style={{ fontSize: "4rem" }} />
+          <div className="name">
+            <p className="header">Mattias Gulec</p>
+            <p className="sub-head">Front-End Developer</p>
+          </div>
         </div>
-      </div>
-      <div className="divider"></div>
-      <Burger />
+        <div className="divider"></div>
+        <Toggle theme={theme} toggleTheme={toggleTheme} />
+      </ThemeProvider>
     </Nav>
   );
 };
