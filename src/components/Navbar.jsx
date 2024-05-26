@@ -1,15 +1,13 @@
 import React from "react";
-import { Nav } from "../global";
 import { RiCodeBoxFill } from "react-icons/ri";
-import { IconContext } from "react-icons";
 import Toggle from "./Toggle";
 import { lightTheme, darkTheme } from "../theme";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "../global";
+import { GlobalStyles, Nav } from "../global";
 import { useDarkMode } from "../useDarkMode";
 
 const Navbar = () => {
-  const [theme, toggleTheme, componentMounted] = useDarkMode();
+  const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === "dark" ? lightTheme : darkTheme;
 
   return (

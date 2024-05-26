@@ -2,6 +2,11 @@ import React from "react";
 import { ToggleContainer } from "../global";
 import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
+Toggle.propTypes = {
+  theme: PropTypes.string.isRequired,
+  toggleTheme: PropTypes.func.isRequired,
+};
+
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === "dark";
 

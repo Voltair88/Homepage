@@ -8,7 +8,6 @@ export default function Landing() {
         className="skeleton"
         alt="profile"
         rel="preload"
-        as="image"
         src={profile}
         loading="lazy"
       />
