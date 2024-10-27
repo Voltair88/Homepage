@@ -1,12 +1,13 @@
 import React from "react";
 import { Port } from "../global";
 import { blogimg, ZeldaArena, football, freshkeeper } from "../img/index";
-import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper-bundle.min.css";
-import "swiper/swiper.min.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-SwiperCore.use([Autoplay, Navigation, Pagination]);
 const slides = [
   {
     img: ZeldaArena,
@@ -46,27 +47,18 @@ const slides = [
 ];
 
 const Portfolio = () => {
-  const swiperOptions = {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    speed: 1500,
-    autoplay: {
-      delay: 300000,
-      disableOnInteraction: false,
-    },
-    pagination: { el: ".swiper-pagination", clickable: true },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  };
   return (
     <Port>
-      <Swiper {...swiperOptions}>
-        <div className="swiper-pagination"></div>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+      <Swiper
+        modules={[Autoplay, Pagination, Navigation]}
+        spaceBetween={30}
+        slidesPerView={1}
+        loop={true}
+        speed={1500}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        pagination={{ clickable: true }}
+        navigation={true}
+        >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="card">

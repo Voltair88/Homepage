@@ -2,37 +2,36 @@
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
-  "description": "",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "myportfolio": "file:",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "react-router": "^6.27.0",
+    "react-router-dom": "^6.27.0",
+    "styled-components": "^6.1.13"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1",
+    "swiper": "^11.1.14",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "overrides": {
+    "nth-check": "^2.0.1",
+    "postcss": "^8.4.31"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
   ],
-  "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.3.0",
-    "react-router": "^6.26.1",
-    "react-router-dom": "^6.26.1",
-    "styled-components": "^6.1.13"
-  },
-  "devDependencies": {
-    "react-scripts": "^5.0.1",
-    "swiper": "^11.1.12",
-    "typescript": "^5.5.4"
-  },
-  "overrides": {
-    "postcss": ">=8.4.31",
-    "nth-check": "^2.1.1"
-  }
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

@@ -3,6 +3,12 @@ import { ToggleContainer } from "../global";
 import { BsFillSunFill, BsMoon } from "react-icons/bs";
 
 
+/**
+ * This component renders a toggle switch for light and dark themes.
+ * It uses the `theme` prop to determine the current theme and the `toggleTheme` prop to switch themes.
+ */
+
+// Start of Selection
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === "dark";
 
